@@ -1,21 +1,16 @@
-/* Barra de navegación estilo WebApp compacta */
-
+/* Barra de navegación */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-
-    min-height: 64px;
-    padding: 10px 22px;
-
+    gap: 1rem 1.5rem;
+    padding: 18px 32px 18px 28px;
+    flex-wrap: wrap;
+    background-color: rgba(10, 15, 24, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     border-bottom: 1px solid var(--border-color);
-    background: var(--topbar-bg);
-    backdrop-filter: blur(18px);
 }
 
 .header-brand {
@@ -25,150 +20,123 @@ header {
 .header-brand-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-
-    color: var(--main-blue);
-    font-size: 1.1rem;
-    font-weight: 900;
-    white-space: nowrap;
+    gap: 0.6rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .header-site-logo {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
     flex-shrink: 0;
-
-    border-radius: 11px;
-    filter: drop-shadow(0 0 12px rgba(66, 194, 255, 0.2));
-}
-
-.header-brand-link span {
-    color: var(--main-blue);
 }
 
 .header-nav {
-    flex: 1 1 auto;
+    flex: 1 1 280px;
     display: flex;
     justify-content: center;
     min-width: 0;
-    overflow: hidden;
 }
 
 .header-nav-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 0.4rem 1.1rem;
     margin: 0;
     padding: 0;
     list-style: none;
-    min-width: 0;
 }
 
 .header-nav-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 34px;
-    padding: 0 9px;
-    border-radius: 12px;
-
-    color: var(--text-muted) !important;
-    font-size: 0.78rem;
-    font-weight: 900;
+    color: #00d2ff !important;
+    font-size: 0.95rem;
     white-space: nowrap;
 }
 
+.header-nav-list li a:hover,
 .header-nav-link:hover {
-    color: var(--text-light) !important;
-    background: rgba(255, 255, 255, 0.055);
-    transform: translateY(-1px);
-    text-shadow: none;
-}
-
-.header-nav-link:focus-visible,
-.header-btn:focus-visible,
-.header-lang:focus-visible {
-    outline: 3px solid rgba(66, 194, 255, 0.3);
-    outline-offset: 3px;
+    color: #fff !important;
+    text-shadow: 0 0 8px var(--main-blue);
 }
 
 .header-actions {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 6px;
-    white-space: nowrap;
+    gap: 0.5rem 0.65rem;
 }
 
 .header-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 36px;
-    padding: 0 12px;
-    border-radius: 13px;
-
-    font-size: 0.78rem;
-    font-weight: 900;
-    line-height: 1;
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
     white-space: nowrap;
+    width: auto;
+    transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .header-btn-primary {
-    color: var(--accent-contrast) !important;
     background: var(--main-blue);
+    color: #0a0f18 !important;
     border: 1px solid var(--main-blue);
-    box-shadow: 0 12px 26px rgba(66, 194, 255, 0.18);
 }
 
 .header-btn-primary:hover {
-    color: var(--accent-contrast) !important;
-    background: #60ccff;
-    border-color: #60ccff;
-    transform: translateY(-1px);
-    box-shadow: 0 16px 32px rgba(66, 194, 255, 0.26);
+    background: #00a8cc;
+    border-color: #00a8cc;
+    color: #0a0f18 !important;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.45);
 }
 
 .header-btn-outline {
-    color: var(--text-light) !important;
-    background: rgba(255, 255, 255, 0.045);
-    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--main-blue) !important;
+    border: 1px solid var(--main-blue);
 }
 
 .header-btn-outline:hover {
-    color: var(--main-blue) !important;
-    background: rgba(66, 194, 255, 0.09);
-    border-color: rgba(66, 194, 255, 0.36);
-    transform: translateY(-1px);
-    text-shadow: none;
+    color: #fff !important;
+    background: rgba(0, 210, 255, 0.12);
+    text-shadow: 0 0 8px var(--main-blue);
 }
 
-.header-lang {
-    min-width: 42px;
-    height: 36px;
-
+/* --- NUEVOS ESTILOS PARA LOS BOTONES DE IDIOMA --- */
+.lang-selector {
     display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3px;
+    margin-left: 15px;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
-
-    border-radius: 13px;
-    border: 1px solid var(--border-color);
-    color: var(--text-light) !important;
-    background: rgba(255, 255, 255, 0.045);
-
-    font-size: 0.78rem;
-    font-weight: 900;
 }
 
-.header-lang:hover {
-    color: var(--main-blue) !important;
-    border-color: rgba(66, 194, 255, 0.36);
-    background: rgba(66, 194, 255, 0.09);
-    transform: translateY(-1px);
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+    background-color: #00d2ff;
+    color: #000000;
 }
