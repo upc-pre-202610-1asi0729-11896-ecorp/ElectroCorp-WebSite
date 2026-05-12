@@ -141,39 +141,223 @@
     </section>
 
     <section id="service" class="service-section">
-        <h3 class="title" data-i18n="plans_title">Our Plans</h3>
-        <p data-i18n="plans_subtitle">Choose the plan that best fits your consumption and infrastructure size.</p>
-        <div class="service-grid">
+    <div class="section-heading">
+        <span class="section-kicker" data-i18n="plans_kicker">BILLING</span>
+        <h3 class="title" data-i18n="plans_title">ElectroCorp Plans</h3>
+        <p data-i18n="plans_subtitle">
+            Choose a plan, complete a simulated card validation, and continue to the WebApp with your plan selected.
+        </p>
+    </div>
 
-            <div class="service-card">
-                <h4>Normal Plan</h4>
-                <h2 data-i18n="normal_plan_price"> S/ 12.90 <span> <s> S/18.90 </s> </span></h2>
-                <p data-i18n="normal_plan_desc">Ideal for apartments and traditional homes.</p>
-                <ul>
-                    <li data-i18n="normal_plan_li1"><i class="fa fa-check"></i> Support 3 Smart Plugs for mount</li>
-                    <li data-i18n="normal_plan_li2"><i class="fa fa-check"></i> Real-time watt monitoring</li>
-                    <li data-i18n="normal_plan_li3"><i class="fa fa-check"></i> Basic ElectroCorp App</li>
-                </ul>
-                <a href="#contact" class="btn" data-i18n="btn_start">Contact Now</a>
+    <div class="service-grid">
+        <article class="service-card">
+            <div class="plan-top">
+                <span class="plan-code">STARTER</span>
+                <h4 data-i18n="starter_plan_name">Starter Plan</h4>
+                <p data-i18n="starter_plan_desc">Basic energy management for small homes.</p>
             </div>
 
-            <div class="service-card premium">
-                <h4>Enterprise Plan</h4>
-                <h2 data-i18n="plan_ent_price"> S/ 75.90 <span> <s> S/85.90 </s> </span></h2>
-                <p data-i18n="plan_ent_desc">Ideal for businesses, offices, and large homes.</p>
-                <ul>
-                    <li data-i18n="plan_ent_li1"><i class="fa fa-star"></i> Support 18 Smart Plugs for mount</li>
-                    <li data-i18n="plan_ent_li2"><i class="fa fa-star"></i> Web Administrative Dashboard</li>
-                    <li data-i18n="plan_ent_li3"><i class="fa fa-star"></i> Real-time watt monitoring</li>
-                    <li data-i18n="plan_ent_li4"><i class="fa fa-star"></i> Basic ElectroCorp App</li>
-                    <li data-i18n="plan_ent_li5"><i class="fa fa-star"></i> 24/7 Technical Support</li>
-                </ul>
-                <a href="#contact" class="btn" data-i18n="btn_contact">Contact Now</a>
+            <h2>
+                S/ 19.00
+                <span data-i18n="plan_month">/ month</span>
+            </h2>
+
+            <ul>
+                <li>
+                    <i class="fa fa-check"></i>
+                    <span data-i18n="starter_plan_li1">Up to 5 smart devices</span>
+                </li>
+                <li>
+                    <i class="fa fa-check"></i>
+                    <span data-i18n="starter_plan_li2">Basic energy dashboard</span>
+                </li>
+                <li>
+                    <i class="fa fa-check"></i>
+                    <span data-i18n="starter_plan_li3">Email alerts</span>
+                </li>
+            </ul>
+
+            <button
+                type="button"
+                class="btn plan-select-btn"
+                data-plan-code="STARTER"
+                data-plan-name="Starter Plan"
+                data-plan-price="19.00"
+                data-i18n="btn_choose_plan"
+            >
+                Choose plan
+            </button>
+        </article>
+
+        <article class="service-card professional">
+            <div class="recommended-badge" data-i18n="plan_recommended">Recommended</div>
+
+            <div class="plan-top">
+                <span class="plan-code">PROFESSIONAL</span>
+                <h4 data-i18n="professional_plan_name">Professional Plan</h4>
+                <p data-i18n="professional_plan_desc">Advanced control for homes and small businesses.</p>
             </div>
-        </div>
-        <hr>
-        <br></br>
-    </section>
+
+            <h2>
+                S/ 49.00
+                <span data-i18n="plan_month">/ month</span>
+            </h2>
+
+            <ul>
+                <li>
+                    <i class="fa fa-star"></i>
+                    <span data-i18n="professional_plan_li1">Up to 20 smart devices</span>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                    <span data-i18n="professional_plan_li2">Advanced energy analytics</span>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                    <span data-i18n="professional_plan_li3">Automation routines</span>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                    <span data-i18n="professional_plan_li4">Monthly reports</span>
+                </li>
+            </ul>
+
+            <button
+                type="button"
+                class="btn plan-select-btn"
+                data-plan-code="PROFESSIONAL"
+                data-plan-name="Professional Plan"
+                data-plan-price="49.00"
+                data-i18n="btn_choose_plan"
+            >
+                Choose plan
+            </button>
+        </article>
+
+        <article class="service-card enterprise">
+            <div class="plan-top">
+                <span class="plan-code">ENTERPRISE</span>
+                <h4 data-i18n="enterprise_plan_name">Enterprise Plan</h4>
+                <p data-i18n="enterprise_plan_desc">Complete platform for companies or multiple locations.</p>
+            </div>
+
+            <h2>
+                S/ 99.00
+                <span data-i18n="plan_month">/ month</span>
+            </h2>
+
+            <ul>
+                <li>
+                    <i class="fa fa-diamond"></i>
+                    <span data-i18n="enterprise_plan_li1">Multiple business locations</span>
+                </li>
+                <li>
+                    <i class="fa fa-diamond"></i>
+                    <span data-i18n="enterprise_plan_li2">Team access profiles</span>
+                </li>
+                <li>
+                    <i class="fa fa-diamond"></i>
+                    <span data-i18n="enterprise_plan_li3">Advanced alerts</span>
+                </li>
+                <li>
+                    <i class="fa fa-diamond"></i>
+                    <span data-i18n="enterprise_plan_li4">Priority support</span>
+                </li>
+            </ul>
+
+            <button
+                type="button"
+                class="btn plan-select-btn"
+                data-plan-code="ENTERPRISE"
+                data-plan-name="Enterprise Plan"
+                data-plan-price="99.00"
+                data-i18n="btn_choose_plan"
+            >
+                Choose plan
+            </button>
+        </article>
+    </div>
+
+    <div class="checkout-modal" id="checkout-modal" aria-hidden="true">
+        <div class="checkout-backdrop" data-close-checkout></div>
+
+        <article class="checkout-card">
+            <button type="button" class="checkout-close" data-close-checkout>
+                ×
+            </button>
+
+            <span class="section-kicker" data-i18n="checkout_kicker">SIMULATED CHECKOUT</span>
+
+            <h3 data-i18n="checkout_title">Complete your plan activation</h3>
+
+            <p class="checkout-summary">
+                <span data-i18n="checkout_selected_plan">Selected plan</span>:
+                <strong id="checkout-plan-name">Professional Plan</strong>
+                · S/ <strong id="checkout-plan-price">49.00</strong>
+            </p>
+
+            <form id="landing-checkout-form" class="checkout-form">
+                <label>
+                    <span data-i18n="checkout_holder">Card holder</span>
+                    <input
+                        type="text"
+                        id="checkout-holder"
+                        placeholder="Jean Loa"
+                        required
+                    >
+                </label>
+
+                <label>
+                    <span data-i18n="checkout_card_number">Card number</span>
+                    <input
+                        type="text"
+                        id="checkout-card"
+                        inputmode="numeric"
+                        maxlength="19"
+                        placeholder="4242 4242 4242 4242"
+                        required
+                    >
+                </label>
+
+                <div class="checkout-row">
+                    <label>
+                        <span data-i18n="checkout_expiration">Expiration</span>
+                        <input
+                            type="text"
+                            id="checkout-expiration"
+                            maxlength="5"
+                            placeholder="12/29"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span data-i18n="checkout_cvv">CVV</span>
+                        <input
+                            type="password"
+                            id="checkout-cvv"
+                            inputmode="numeric"
+                            maxlength="4"
+                            placeholder="123"
+                            required
+                        >
+                    </label>
+                </div>
+
+                <p class="checkout-note" data-i18n="checkout_note">
+                    Academic simulated payment. The full card number and CVV are not sent to the WebApp.
+                </p>
+
+                <button type="submit" class="btn checkout-submit" data-i18n="checkout_continue">
+                    Continue to register
+                </button>
+            </form>
+        </article>
+    </div>
+
+    <hr>
+    <br>
+</section>
 
     <section id="reviews" class="reviews section-testimonials">
         <h3 class="title" data-i18n="testimonials_sectionTitle">What our clients say</h3>
@@ -335,5 +519,6 @@
 <script src="js/testimonials.js"></script>
 <script src="js/audio.js"></script>
 <script src="js/faq_question.js"></script>
+<script src="js/plan-checkout.js"></script>
 </body>
 </html>

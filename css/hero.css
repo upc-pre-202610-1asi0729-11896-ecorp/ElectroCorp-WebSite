@@ -1,85 +1,139 @@
-/* Hero y búsqueda */
+/* Hero y búsqueda estilo WebApp */
+
 .hero {
     position: relative;
-    padding: 100px 20px;
-    text-align: center;
-    min-height: 90vh;
+    overflow: hidden;
+
+    min-height: calc(100vh - 76px);
+    padding: 108px 24px 88px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 36px 7% auto;
+    height: 62%;
+    max-height: 520px;
+
+    border-radius: 34px;
+    border: 1px solid var(--border-color);
+    background:
+        radial-gradient(circle at top left, rgba(66, 194, 255, 0.22), transparent 36%),
+        linear-gradient(135deg, rgba(20, 35, 58, 0.72), rgba(8, 24, 45, 0.62));
+    box-shadow: var(--shadow-card);
+    z-index: -2;
 }
 
 .hero .background-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
+
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
-    z-index: -1;
+    opacity: 0.09;
+    z-index: -3;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    max-width: 980px;
+    color: #ffffff;
+    font-size: clamp(2.5rem, 6vw, 5.1rem);
+    line-height: 0.98;
     margin-bottom: 1rem;
-    color: #fff;
+    letter-spacing: -0.07em;
+}
+
+.hero h1 + h1 {
+    color: var(--main-blue);
+    font-size: clamp(2rem, 4.6vw, 4.2rem);
+    margin-top: -0.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.hero h3 {
+    max-width: 780px;
+    margin: 0 auto 34px;
+    color: var(--text-muted);
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: normal;
 }
 
 .hero .hero-dashboard-btn {
     width: auto;
-    min-width: 12rem;
+    min-width: 13rem;
     max-width: 100%;
     margin: 0 auto 1.5rem;
-    display: inline-block;
+
+    display: inline-flex;
     font-size: 1rem;
-    padding: 0.7rem 1.75rem;
-    border-radius: 999px;
-    box-shadow: 0 4px 20px rgba(0, 210, 255, 0.25);
+    padding: 0 1.75rem;
+    border-radius: 14px;
+    box-shadow: 0 18px 36px rgba(66, 194, 255, 0.22);
 }
 
 .hero .hero-dashboard-btn:hover {
-    background: #00a8cc;
-    box-shadow: 0 6px 24px rgba(0, 210, 255, 0.35);
-}
-
-.hero h3 {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    font-weight: 400;
-    margin-bottom: 40px;
+    background: #60ccff;
+    box-shadow: 0 22px 44px rgba(66, 194, 255, 0.28);
 }
 
 .search-container {
     display: flex;
-    max-width: 500px;
+    max-width: 540px;
     width: 100%;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 30px;
+
     overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+    background: rgba(20, 35, 58, 0.78);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
 }
 
 .search-container input {
     flex: 1;
-    padding: 15px 25px;
+    min-width: 0;
+    padding: 16px 22px;
+
     border: none;
-    background: transparent;
-    color: var(--text-light);
     outline: none;
+
+    color: var(--text-light);
+    background: transparent;
+    font-size: 0.96rem;
+    font-weight: 700;
+}
+
+.search-container input::placeholder {
+    color: rgba(184, 199, 219, 0.72);
 }
 
 .search-container button {
-    padding: 15px 25px;
+    min-width: 58px;
+    padding: 15px 22px;
+
     border: none;
+    color: var(--accent-contrast);
     background: var(--main-blue);
-    color: #000;
+
     cursor: pointer;
-    transition: background 0.3s;
+    transition:
+        background 160ms ease,
+        transform 160ms ease;
 }
 
 .search-container button:hover {
-    background: #00a8cc;
+    background: #60ccff;
+}
+
+.hero hr {
+    margin-bottom: 0;
 }

@@ -1,6 +1,10 @@
-/* Equipo — grid centrado (3+2, 2+2+1 según ancho) y brillo uniforme en todas las cards */
+/* Equipo — estilo WebApp */
+
 .section-about {
-    background-color: var(--main-bg);
+    background:
+        radial-gradient(circle at top, rgba(66, 194, 255, 0.08), transparent 34%),
+        rgba(20, 35, 58, 0.52);
+    border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -18,7 +22,7 @@
     color: var(--text-muted);
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
-    max-width: 700px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,30 +33,34 @@
     justify-content: center;
     align-content: center;
     gap: 1.5rem;
-    max-width: 1020px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .card-team {
-    --team-glow: 0 0 22px rgba(0, 210, 255, 0.2), 0 0 44px rgba(0, 210, 255, 0.1);
-    background: linear-gradient(165deg, rgba(0, 210, 255, 0.1) 0%, var(--card-bg) 42%, var(--card-bg) 100%);
-    border: 1px solid rgba(0, 210, 255, 0.38);
-    border-radius: 12px;
+    background:
+        linear-gradient(165deg, rgba(66, 194, 255, 0.12) 0%, var(--card-bg) 42%, var(--card-bg) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
     padding: 1.5rem 1.25rem;
+
     text-align: left;
     flex: 0 1 300px;
     min-width: 260px;
-    max-width: 320px;
-    box-shadow: var(--team-glow);
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    max-width: 330px;
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.18s ease;
 }
 
 .card-team:hover {
-    border-color: rgba(0, 210, 255, 0.6);
-    box-shadow:
-            0 0 28px rgba(0, 210, 255, 0.35),
-            0 0 56px rgba(0, 210, 255, 0.12);
-    transform: translateY(-2px);
+    border-color: rgba(66, 194, 255, 0.46);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-4px);
 }
 
 .team-upc-badge {
@@ -63,6 +71,8 @@
     object-position: left center;
     display: block;
     margin-bottom: 0.85rem;
+
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.08));
 }
 
 .card-team h3 {
@@ -70,12 +80,13 @@
     font-size: 1.05rem;
     line-height: 1.35;
     margin-bottom: 0.4rem;
+    letter-spacing: -0.02em;
 }
 
 .team-role {
-    color: var(--text-muted);
+    color: var(--main-blue);
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 0.65rem;
 }
 
