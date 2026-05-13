@@ -4,3 +4,4 @@ This file documents HiApple's real contribution to FAQ review, support content, 
 - Reviewed FAQ questions and answer consistency.
 - Checked support and contact wording.
 - Validated product pricing descriptions.
+- Reviewed language consistency in UI labels.
