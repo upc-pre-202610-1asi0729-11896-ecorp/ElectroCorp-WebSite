@@ -82,7 +82,6 @@
     padding: 0 20px;
 }
 
-/* 5. El texto de las respuestas */
 .faq_a1 p, .faq_a2 p, .faq_a3 p {
     padding: 15px 0;
     color: #d1d5db;
@@ -92,6 +91,29 @@
 
 #service {
     background-color: var(--main-bg);
+}
+
+.service-section .section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.service-section .section-kicker {
+    color: #00d2ff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-section .section-heading p {
+    margin-top: 10px;
+    max-width: 600px; 
 }
 
 .service-grid {
