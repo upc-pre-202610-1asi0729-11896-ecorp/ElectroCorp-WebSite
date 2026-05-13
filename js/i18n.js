@@ -87,7 +87,43 @@ const translations = {
         contact_title: "Únete a la Revolución Eléctrica",
         contact_subtitle: "El futuro es eficiente. Suscríbete para recibir consejos de ahorro, actualizaciones de la app y ofertas exclusivas en nuestro próximo pack de enchufes inteligentes.",
         btn_send: "Enviar",
-        footer_rights: "Todos los derechos reservados."
+        footer_rights: "Todos los derechos reservados.",
+        plans_kicker: "Facturación",
+starter_plan_name: "Plan Starter",
+starter_plan_desc: "Gestión básica de energía para hogares pequeños.",
+starter_plan_price: "S/ 19.00 <span>/ mes</span>",
+starter_plan_li1: "Hasta 5 dispositivos inteligentes",
+starter_plan_li2: "Panel energético básico",
+starter_plan_li3: "Alertas por correo",
+
+professional_plan_name: "Plan Professional",
+professional_plan_desc: "Control avanzado para hogares y pequeños negocios.",
+professional_plan_price: "S/ 49.00 <span>/ mes</span>",
+professional_plan_li1: "Hasta 20 dispositivos inteligentes",
+professional_plan_li2: "Analítica energética avanzada",
+professional_plan_li3: "Rutinas de automatización",
+professional_plan_li4: "Reportes mensuales",
+
+enterprise_plan_name: "Plan Enterprise",
+enterprise_plan_desc: "Plataforma completa para múltiples locales o empresas.",
+enterprise_plan_price: "S/ 99.00 <span>/ mes</span>",
+enterprise_plan_li1: "Múltiples locales comerciales",
+enterprise_plan_li2: "Perfiles de acceso para el equipo",
+enterprise_plan_li3: "Alertas avanzadas",
+enterprise_plan_li4: "Soporte prioritario",
+
+plan_recommended: "Recomendado",
+btn_choose_plan: "Elegir plan",
+
+checkout_kicker: "Pago simulado",
+checkout_title: "Completa la activación de tu plan",
+checkout_selected_plan: "Plan seleccionado",
+checkout_holder: "Titular de la tarjeta",
+checkout_card_number: "Número de tarjeta",
+checkout_expiration: "Vencimiento",
+checkout_cvv: "CVV",
+checkout_note: "Pago simulado académico. El número completo de tarjeta y el CVV no se envían a la WebApp.",
+checkout_continue: "Continuar al registro"
     },
     en: {
         nav_home: "Home",
@@ -176,7 +212,43 @@ const translations = {
         contact_title: "Join the Electrical Revolution",
         contact_subtitle: "The future is efficient. Subscribe to receive saving tips, app updates, and exclusive offers on our upcoming smart plug pack.",
         btn_send: "Submit",
-        footer_rights: "All rights reserved."
+        footer_rights: "All rights reserved.",
+        plans_kicker: "Billing",
+starter_plan_name: "Starter Plan",
+starter_plan_desc: "Basic energy management for small homes.",
+starter_plan_price: "S/ 19.00 <span>/ month</span>",
+starter_plan_li1: "Up to 5 smart devices",
+starter_plan_li2: "Basic energy dashboard",
+starter_plan_li3: "Email alerts",
+
+professional_plan_name: "Professional Plan",
+professional_plan_desc: "Advanced control for homes and small businesses.",
+professional_plan_price: "S/ 49.00 <span>/ month</span>",
+professional_plan_li1: "Up to 20 smart devices",
+professional_plan_li2: "Advanced energy analytics",
+professional_plan_li3: "Automation routines",
+professional_plan_li4: "Monthly reports",
+
+enterprise_plan_name: "Enterprise Plan",
+enterprise_plan_desc: "Complete platform for multiple business locations.",
+enterprise_plan_price: "S/ 99.00 <span>/ month</span>",
+enterprise_plan_li1: "Multiple business locations",
+enterprise_plan_li2: "Access profiles for staff",
+enterprise_plan_li3: "Advanced alerts",
+enterprise_plan_li4: "Priority support",
+
+plan_recommended: "Recommended",
+btn_choose_plan: "Choose plan",
+
+checkout_kicker: "Simulated checkout",
+checkout_title: "Complete your plan activation",
+checkout_selected_plan: "Selected plan",
+checkout_holder: "Card holder",
+checkout_card_number: "Card number",
+checkout_expiration: "Expiration",
+checkout_cvv: "CVV",
+checkout_note: "Academic simulated payment. The full card number and CVV are not sent to the WebApp.",
+checkout_continue: "Continue to register"
     },
     pt: {
         nav_home: "Início",
@@ -265,7 +337,43 @@ const translations = {
         contact_title: "Junte-se à Revolução Elétrica",
         contact_subtitle: "O futuro é eficiente. Inscreva-se para receber dicas de economia, atualizações do app e ofertas exclusivas no nosso próximo pacote de tomadas inteligentes.",
         btn_send: "Enviar",
-        footer_rights: "Todos os direitos reservados."
+        footer_rights: "Todos os direitos reservados.",
+        plans_kicker: "Faturamento",
+starter_plan_name: "Plano Starter",
+starter_plan_desc: "Gestão básica de energia para casas pequenas.",
+starter_plan_price: "S/ 19.00 <span>/ mês</span>",
+starter_plan_li1: "Até 5 dispositivos inteligentes",
+starter_plan_li2: "Painel básico de energia",
+starter_plan_li3: "Alertas por e-mail",
+
+professional_plan_name: "Plano Professional",
+professional_plan_desc: "Controle avançado para residências e pequenos negócios.",
+professional_plan_price: "S/ 49.00 <span>/ mês</span>",
+professional_plan_li1: "Até 20 dispositivos inteligentes",
+professional_plan_li2: "Análise energética avançada",
+professional_plan_li3: "Rotinas de automação",
+professional_plan_li4: "Relatórios mensais",
+
+enterprise_plan_name: "Plano Enterprise",
+enterprise_plan_desc: "Plataforma completa para várias sedes ou empresas.",
+enterprise_plan_price: "S/ 99.00 <span>/ mês</span>",
+enterprise_plan_li1: "Várias localizações comerciais",
+enterprise_plan_li2: "Perfis de acesso para a equipe",
+enterprise_plan_li3: "Alertas avançados",
+enterprise_plan_li4: "Suporte prioritário",
+
+plan_recommended: "Recomendado",
+btn_choose_plan: "Escolher plano",
+
+checkout_kicker: "Pagamento simulado",
+checkout_title: "Complete a ativação do seu plano",
+checkout_selected_plan: "Plano selecionado",
+checkout_holder: "Titular do cartão",
+checkout_card_number: "Número do cartão",
+checkout_expiration: "Validade",
+checkout_cvv: "CVV",
+checkout_note: "Pagamento acadêmico simulado. O número completo do cartão e o CVV não são enviados para a WebApp.",
+checkout_continue: "Continuar para o cadastro"
     }
 };
 
@@ -276,33 +384,27 @@ function applyTranslations(lang) {
 
     elements.forEach((element) => {
         const key = element.getAttribute("data-i18n");
+
         if (translations[lang] && translations[lang][key]) {
-            if (element.querySelector('i.fa')) {
-                const icon = element.querySelector("i").outerHTML;
-                element.innerHTML = `${icon} ${translations[lang][key]}`;
+            const value = translations[lang][key];
+
+            if (value.includes("<")) {
+                element.innerHTML = value;
             } else {
-                element.innerHTML = translations[lang][key];
+                element.textContent = value;
             }
         }
     });
 
-    document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
+    const ariaElements = document.querySelectorAll("[data-i18n-aria]");
+
+    ariaElements.forEach((element) => {
         const key = element.getAttribute("data-i18n-aria");
-        if (key && translations[lang] && translations[lang][key]) {
+
+        if (translations[lang] && translations[lang][key]) {
             element.setAttribute("aria-label", translations[lang][key]);
         }
     });
-
-    const searchInput = document.getElementById("searchInput");
-    if (searchInput) {
-        if (lang === "es") {
-            searchInput.placeholder = "Buscar palabra clave o pregunta";
-        } else if (lang === "pt") {
-            searchInput.placeholder = "Buscar palavra-chave ou pergunta";
-        } else {
-            searchInput.placeholder = "Search keyword or question";
-        }
-    }
 }
 
 function setLanguage(lang) {

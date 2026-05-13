@@ -64,18 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     expirationInput.addEventListener("input", () => {
-        const cleanValue = expirationInput.value.replace(/\D/g, "").slice(0, 4);
-
-        if (cleanValue.length >= 3) {
-            expirationInput.value = `${cleanValue.slice(0, 2)}/${cleanValue.slice(2)}`;
-            return;
-        }
-
-        expirationInput.value = cleanValue;
+        expirationInput.value = formatExpirationDate(expirationInput.value);
     });
 
     cvvInput.addEventListener("input", () => {
-        cvvInput.value = cvvInput.value.replace(/\D/g, "").slice(0, 4);
+        cvvInput.value = cvvInput.value.replace(/\D/g, "").slice(0, 3);
     });
 
     form.addEventListener("submit", (event) => {
@@ -97,13 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        if (!/^\d{2}\/\d{2}$/.test(expiration)) {
-            alert("Ingresa una fecha de vencimiento válida. Ejemplo: 12/29.");
+        if (!isValidExpirationDate(expiration)) {
+            alert("Ingresa una fecha válida en formato MM/YY. El mes debe estar entre 01 y 12, y el año debe ser 26 o mayor. Ejemplo: 01/26.");
             return;
         }
 
-        if (cvv.length < 3) {
-            alert("Ingresa un CVV válido para la simulación.");
+        if (!/^\d{3}$/.test(cvv)) {
+            alert("El CVV debe tener exactamente 3 números.");
             return;
         }
 
@@ -123,5 +116,51 @@ document.addEventListener("DOMContentLoaded", () => {
     function closeCheckout() {
         modal.classList.remove("open");
         modal.setAttribute("aria-hidden", "true");
+    }
+
+    function formatExpirationDate(value) {
+        let digits = value.replace(/\D/g, "").slice(0, 4);
+
+        if (digits.length === 0) {
+            return "";
+        }
+
+        if (digits.length === 1 && Number(digits[0]) > 1) {
+            digits = `0${digits[0]}`;
+        }
+
+        if (digits.length >= 2) {
+            let month = Number(digits.slice(0, 2));
+
+            if (month === 0) {
+                digits = `01${digits.slice(2)}`;
+            }
+
+            if (month > 12) {
+                digits = `12${digits.slice(2)}`;
+            }
+        }
+
+        if (digits.length >= 3) {
+            return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+        }
+
+        return digits;
+    }
+
+    function isValidExpirationDate(value) {
+        if (!/^\d{2}\/\d{2}$/.test(value)) {
+            return false;
+        }
+
+        const [monthText, yearText] = value.split("/");
+        const month = Number(monthText);
+        const year = Number(yearText);
+
+        if (month < 1 || month > 12) {
+            return false;
+        }
+
+        return year >= 26;
     }
 });

@@ -1,505 +1,14 @@
-===== index.html =====
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElectroCorp | Smart Energy Management</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet"
-    >
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<div id="contenido-web">
-    <header>
-        <div class="header-brand">
-            <a href="index.html" class="header-brand-link">
-                <img src="img/logo.png" alt="ElectroCorp" class="header-site-logo" width="44" height="44">
-                <span>ElectroCorp.Web</span>
-            </a>
-        </div>
-        <nav class="header-nav" aria-label="Secciones">
-            <ul class="header-nav-list">
-                <li><a href="#hero" class="header-nav-link" data-i18n="nav_home">Home</a></li>
-                <li><a href="#description" class="header-nav-link" data-i18n="nav_desc">Description</a></li>
-                <li><a href="#goals" class="header-nav-link" data-i18n="nav_goals">Goals</a></li>
-                <li><a href="#que_frequents" class="header-nav-link" data-i18n="nav_que_frequents">Questions Frequent</a></li>
-                <li><a href="#service" class="header-nav-link" data-i18n="nav_plans">Pricing</a></li>
-                <li><a href="#reviews" class="header-nav-link" data-i18n="nav_reviews">Reviews</a></li>
-                <li><a href="#about" class="header-nav-link" data-i18n="nav_about">About us</a></li>
-                <li><a href="#device" class="header-nav-link" data-i18n="nav_smart">Smart Plugs</a></li>
-                <li><a href="#direction" class="header-nav-link" data-i18n="nav_direction">Direction</a></li>
-                <li><a href="#contact" class="header-nav-link" data-i18n="nav_support">Support</a></li>
-            </ul>
-        </nav>
-        <div class="header-actions">
-    <a
-        href="https://electrocorp-webapp.onrender.com/iam/login"
-        class="header-btn header-btn-outline"
-        data-i18n="nav_login"
-    >
-        Iniciar sesión
-    </a>
+===== ./README.md =====
+# ElectroCorp-website
 
-    <a
-        href="https://electrocorp-webapp.onrender.com/iam/register"
-        class="header-btn header-btn-primary"
-        data-i18n="nav_register"
-    >
-        Registrarse
-    </a>
+===== ./css/about.css =====
+/* Equipo — estilo WebApp */
 
-    <a
-        href="#"
-        class="header-lang"
-        onclick="toggleLanguage(); return false;"
-        aria-label="Cambiar idioma"
-    >
-        <i class="fa fa-globe"></i>
-        <span id="lang-text">ES</span>
-    </a>
-</div>
-    </header>
-
-    <section id="hero" class="hero">
-        <div class="background-image" style="background-image: url('img/FondoPantalla2.png');"></div>
-        <h1 data-i18n="hero_title"> Take control of your home's electricity consumption </h1>
-        <h1 data-i18n="hero_title2"> Save up to 20% on energy in your home </h1>
-        <a href="https://electrocorp-webapp.onrender.com/energy-monitoring/dashboard" class="btn hero-dashboard-btn" data-i18n="hero_dashboard">Go to dashboard</a>
-        <h3 data-i18n="hero_subtitle"> 15% discount for 3 months for the first 50 new users </h3>
-
-        <div class="search-container">
-            <input type="text" placeholder="Search keyword or question" id="searchInput">
-            <button type="button" id="btn-buscar"><i class="fa fa-search"></i></button>
-        </div>
-        <hr>
-    </section>
-
-    <section id="description" class="description">
-        <br></br>
-        <h3 class="title" data-i18n="desc_title"> Start-Up Description</h3>
-        <p data-i18n="desc_text1">
-            We are a tech startup focused on democratizing home automation and energy efficiency for Peruvian households.
-        <p data-i18n="desc_text2">
-            Currently, making a house "smart" is expensive, requires complex work (cables, technicians) and the applications are usually generic or difficult to understand, in addition to the high cost of electricity.
-        <p data-i18n="desc_text3">
-            A plug-and-play IoT ecosystem that installs in minutes on existing switches and sockets. It allows for remote control and real-time consumption monitoring without the need for any construction work in the home.</p>
-        <hr>
-        <br></br>
-    </section>
-
-    <section id="goals" class="goals">
-        <h3 class="title" data-i18n="goals_title"> Our Goals</h3>
-        <p data-i18n="goals_text">
-            To develop an easy-to-understand plug-and-play Internet of Things (IoT) ecosystem that
-            allows families and new businesses in Peru to efficiently manage their electrical consumption, optimizing their
-            economic expenses and promoting sustainability through a software platform: an app and/or website.
-        </p>
-        <ul class="grid">
-            <li class="small" style="background-image: url('img/sensorLuz.png');"></li>
-            <li class="small" style="background-image: url('img/AppImage.jpg');"></li>
-        </ul>
-        <hr>
-        <br></br>
-    </section>
-
-    <section id="que_frequents" class="que_frequents">
-        <h3 class="title" data-i18n="faq_title">Frequently Asked Questions about Consumption and Saving</h3>
-        <p class="subtitle" data-i18n="faq_subtitle" style="text-align: center; margin-bottom: 2rem;">Learn how to manage your energy smartly</p>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq_q1">
-                    <span data-i18n="faq_q1">Which appliances consume the most electricity?</span>
-                    <i class="fa fa-chevron-down"></i>
-                </button>
-                <div class="faq_a1">
-                    <p data-i18n="faq_a1">Devices that generate heat or cold consume the most. This includes electric water heaters, refrigerators, irons, and microwaves.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq_q2">
-                    <span data-i18n="faq_q2">How does a smart plug help save energy?</span>
-                    <i class="fa fa-chevron-down"></i>
-                </button>
-                <div class="faq_a2">
-                    <p data-i18n="faq_a2">It allows you to turn off devices remotely, avoid 'vampire' power consumption, and schedule automatic usage times.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq_q3">
-                    <span data-i18n="faq_q3">What is stand by power and how to avoid it?</span>
-                    <i class="fa fa-chevron-down"></i>
-                </button>
-                <div class="faq_a3">
-                    <p data-i18n="faq_a3">It is the energy used by devices in standby mode. It represents up to 10% of the bill. Avoid it by unplugging or using Smart Plugs.</p>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <br>
-    </section>
-
-    <section id="service" class="service-section">
-    <div class="section-heading">
-        <span class="section-kicker" data-i18n="plans_kicker">BILLING</span>
-        <h3 class="title" data-i18n="plans_title">ElectroCorp Plans</h3>
-        <p data-i18n="plans_subtitle">
-            Choose a plan, complete a simulated card validation, and continue to the WebApp with your plan selected.
-        </p>
-    </div>
-
-    <div class="service-grid">
-        <article class="service-card">
-            <div class="plan-top">
-                <span class="plan-code">STARTER</span>
-                <h4 data-i18n="starter_plan_name">Starter Plan</h4>
-                <p data-i18n="starter_plan_desc">Basic energy management for small homes.</p>
-            </div>
-
-            <h2>
-                S/ 19.00
-                <span data-i18n="plan_month">/ month</span>
-            </h2>
-
-            <ul>
-                <li><i class="fa fa-check"></i><span data-i18n="starter_plan_li1">Up to 5 smart devices</span></li>
-                <li><i class="fa fa-check"></i><span data-i18n="starter_plan_li2">Basic energy dashboard</span></li>
-                <li><i class="fa fa-check"></i><span data-i18n="starter_plan_li3">Email alerts</span></li>
-            </ul>
-
-            <button
-                type="button"
-                class="btn plan-select-btn"
-                data-plan-code="STARTER"
-                data-plan-name="Starter Plan"
-                data-plan-price="19.00"
-                data-i18n="btn_choose_plan"
-            >
-                Choose plan
-            </button>
-        </article>
-
-        <article class="service-card professional">
-            <div class="recommended-badge" data-i18n="plan_recommended">Recommended</div>
-
-            <div class="plan-top">
-                <span class="plan-code">PROFESSIONAL</span>
-                <h4 data-i18n="professional_plan_name">Professional Plan</h4>
-                <p data-i18n="professional_plan_desc">Advanced control for homes and small businesses.</p>
-            </div>
-
-            <h2>
-                S/ 49.00
-                <span data-i18n="plan_month">/ month</span>
-            </h2>
-
-            <ul>
-                <li><i class="fa fa-star"></i><span data-i18n="professional_plan_li1">Up to 20 smart devices</span></li>
-                <li><i class="fa fa-star"></i><span data-i18n="professional_plan_li2">Advanced energy analytics</span></li>
-                <li><i class="fa fa-star"></i><span data-i18n="professional_plan_li3">Automation routines</span></li>
-                <li><i class="fa fa-star"></i><span data-i18n="professional_plan_li4">Monthly reports</span></li>
-            </ul>
-
-            <button
-                type="button"
-                class="btn plan-select-btn"
-                data-plan-code="PROFESSIONAL"
-                data-plan-name="Professional Plan"
-                data-plan-price="49.00"
-                data-i18n="btn_choose_plan"
-            >
-                Choose plan
-            </button>
-        </article>
-
-        <article class="service-card enterprise">
-            <div class="plan-top">
-                <span class="plan-code">ENTERPRISE</span>
-                <h4 data-i18n="enterprise_plan_name">Enterprise Plan</h4>
-                <p data-i18n="enterprise_plan_desc">Complete platform for companies or multiple locations.</p>
-            </div>
-
-            <h2>
-                S/ 99.00
-                <span data-i18n="plan_month">/ month</span>
-            </h2>
-
-            <ul>
-                <li><i class="fa fa-diamond"></i><span data-i18n="enterprise_plan_li1">Multiple business locations</span></li>
-                <li><i class="fa fa-diamond"></i><span data-i18n="enterprise_plan_li2">Team access profiles</span></li>
-                <li><i class="fa fa-diamond"></i><span data-i18n="enterprise_plan_li3">Advanced alerts</span></li>
-                <li><i class="fa fa-diamond"></i><span data-i18n="enterprise_plan_li4">Priority support</span></li>
-            </ul>
-
-            <button
-                type="button"
-                class="btn plan-select-btn"
-                data-plan-code="ENTERPRISE"
-                data-plan-name="Enterprise Plan"
-                data-plan-price="99.00"
-                data-i18n="btn_choose_plan"
-            >
-                Choose plan
-            </button>
-        </article>
-    </div>
-
-    <div class="checkout-modal" id="checkout-modal" aria-hidden="true">
-        <div class="checkout-backdrop" data-close-checkout></div>
-
-        <article class="checkout-card">
-            <button type="button" class="checkout-close" data-close-checkout>
-                ×
-            </button>
-
-            <span class="section-kicker" data-i18n="checkout_kicker">SIMULATED CHECKOUT</span>
-
-            <h3 data-i18n="checkout_title">Complete your plan activation</h3>
-
-            <p class="checkout-summary">
-                <span data-i18n="checkout_selected_plan">Selected plan</span>:
-                <strong id="checkout-plan-name">Professional Plan</strong>
-                · S/ <strong id="checkout-plan-price">49.00</strong>
-            </p>
-
-            <form id="landing-checkout-form" class="checkout-form">
-                <label>
-                    <span data-i18n="checkout_holder">Card holder</span>
-                    <input
-                        type="text"
-                        id="checkout-holder"
-                        placeholder="Jean Loa"
-                        required
-                    >
-                </label>
-
-                <label>
-                    <span data-i18n="checkout_card_number">Card number</span>
-                    <input
-                        type="text"
-                        id="checkout-card"
-                        inputmode="numeric"
-                        maxlength="19"
-                        placeholder="4242 4242 4242 4242"
-                        required
-                    >
-                </label>
-
-                <div class="checkout-row">
-                    <label>
-                        <span data-i18n="checkout_expiration">Expiration</span>
-                        <input
-                            type="text"
-                            id="checkout-expiration"
-                            maxlength="5"
-                            placeholder="12/29"
-                            required
-                        >
-                    </label>
-
-                    <label>
-                        <span data-i18n="checkout_cvv">CVV</span>
-                        <input
-                            type="password"
-                            id="checkout-cvv"
-                            inputmode="numeric"
-                            maxlength="4"
-                            placeholder="123"
-                            required
-                        >
-                    </label>
-                </div>
-
-                <p class="checkout-note" data-i18n="checkout_note">
-                    Academic simulated payment. The full card number and CVV are not sent to the WebApp.
-                </p>
-
-                <button type="submit" class="btn checkout-submit" data-i18n="checkout_continue">
-                    Continue to register
-                </button>
-            </form>
-        </article>
-    </div>
-
-    <hr>
-    <br>
-</section>
-
-    <section id="reviews" class="reviews section-testimonials">
-        <h3 class="title" data-i18n="testimonials_sectionTitle">What our clients say</h3>
-        <div class="testimonial-slider-outer">
-            <button type="button" class="testimonial-nav testimonial-nav--prev" data-i18n-aria="meta.sliderPrev" aria-label="Previous reviews">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            </button>
-            <div class="testimonial-slider" id="testimonialSlider" data-i18n-aria="meta.testimonialsSlider" aria-label="Client reviews slider" tabindex="0">
-                <article class="card card-testimonial">
-                    <img class="testimonial-avatar" src="https://www.infobae.com/resizer/v2/CPGKD5EXLZEO7OSWENSND5OVTY.jpg?auth=8306f0fc4fae2e4732d6c494ba9c1b392066bcceee750fc18bac160e24c62897&amp;smart=true&amp;width=992&amp;height=558&amp;quality=85" alt="Valentino Cruz">
-                    <h3>Valentino Cruz</h3>
-                    <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
-                    <p class="testimonial-quote" data-i18n="testimonials_q1">"ElectroCorp.Web shows which appliance is really driving watts in our home. I lowered the bill without rewiring the house or hiring special technicians—it finally feels like smart energy, not a luxury we can't afford."</p>
-                </article>
-                <article class="card card-testimonial">
-                    <img class="testimonial-avatar" src="https://i.pinimg.com/736x/46/91/97/46919703baafce4552b2fa913bdf6544.jpg" alt="Thiago Medina">
-                    <h3>Thiago Medina</h3>
-                    <p class="testimonial-role" data-i18n="testimonials_roleFree">Free user</p>
-                    <p class="testimonial-quote" data-i18n="testimonials_q2">"We had the setup running over our existing switches and outlets in an afternoon—no broken walls, no new grid. That plug-and-play piece is what sold us; generic apps never matched how we actually use power in Peru."</p>
-                </article>
-                <article class="card card-testimonial">
-                    <img class="testimonial-avatar" src="https://www.latercera.com/resizer/v2/CP57ROPIQRBABHJVPYNOD5T3W4.jpeg?auth=5ddd40fdc5b1cfbd6dd64c417ba58ba4797929451bead5919d0a9a0de16f0524&amp;smart=true&amp;width=800&amp;height=1194&amp;quality=70" alt="Lautaro Reyes">
-                    <h3>Lautaro Reyes</h3>
-                    <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
-                    <p class="testimonial-quote" data-i18n="testimonials_q3">"I schedule my appliances and watch consumption in real time. When something stayed on all night, the alert saved me an unnecessary cost—our electricity spend was already a pain point, and this gives us real control."</p>
-                </article>
-                <article class="card card-testimonial">
-                    <img class="testimonial-avatar" src="https://lastfm.freetls.fastly.net/i/u/ar0/795e76529611a50bc65374e23f1e6161.jpg" alt="Barbara Cantarero">
-                    <h3>Barbara Cantarero</h3>
-                    <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
-                    <p class="testimonial-quote" data-i18n="testimonials_q4">"The web platform is easy to read—not another complicated dashboard. I finally see local consumption the way it really happens, and I plan the week with real data instead of guessing on the bill."</p>
-                </article>
-                <article class="card card-testimonial">
-                    <img class="testimonial-avatar" src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/a/1/a/0a1a2368485c5fea7bb5aa9ca3377a27.jpg" alt="Matias Solano">
-                    <h3>Matias Solano</h3>
-                    <p class="testimonial-role" data-i18n="testimonials_roleFree">Free user</p>
-                    <p class="testimonial-quote" data-i18n="testimonials_q5">"We run everything through ElectroCorp.Web: remote on/off, schedules, and monitoring from the app. For our household, democratizing home automation and cutting energy costs is the point—and this is the first stack that made it feel realistic."</p>
-                </article>
-            </div>
-            <button type="button" class="testimonial-nav testimonial-nav--next" data-i18n-aria="meta.sliderNext" aria-label="Next reviews">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </button>
-        </div>
-        <hr>
-    </section>
-
-    <section id="about" class="section-about">
-        <div class="container-about">
-            <h2 class="title about-title" data-i18n="about_title">About us</h2>
-            <p class="about-lead" data-i18n="about_lead">UPC Software Engineering students building ElectroCorp.Web</p>
-            <div class="container-team-div">
-                <article class="card card-team">
-                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
-                    <h3>Diego Alexander Cabrejos Chocco</h3>
-                    <p class="team-role" data-i18n="about_role_diego">Logic &amp; backend-oriented</p>
-                    <p class="team-bio" data-i18n="about_bio_diego">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, and Java. Contributes to backend structure and APIs for ElectroCorp.Web.</p>
-                </article>
-                <article class="card card-team">
-                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
-                    <h3>Sebastian Oswaldo Tavara Correa</h3>
-                    <p class="team-role" data-i18n="about_role_seb">Data &amp; monitoring-oriented</p>
-                    <p class="team-bio" data-i18n="about_bio_seb">Software Engineering student at UPC. C++, HTML, CSS, JavaScript. Data flow, metrics, and power-usage views for the platform.</p>
-                </article>
-                <article class="card card-team">
-                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
-                    <h3>Jairo Mathias Santiago Atanacio</h3>
-                    <p class="team-role" data-i18n="about_role_gho">Logic &amp; integration-oriented</p>
-                    <p class="team-bio" data-i18n="about_bio_gho">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Connects services and features end-to-end.</p>
-                </article>
-                <article class="card card-team">
-                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
-                    <h3>Jean Franck Loa Rojas</h3>
-                    <p class="team-role" data-i18n="about_role_alex">UI / UX &amp; frontend-oriented</p>
-                    <p class="team-bio" data-i18n="about_bio_alex">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, Java, and Flutter. Design and interface for the ElectroCorp.Web platform and the app.</p>
-                </article>
-                <article class="card card-team">
-                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
-                    <h3>Timothy Documet Romero</h3>
-                    <p class="team-role" data-i18n="about_role_ronal">Logic &amp; quality-oriented</p>
-                    <p class="team-bio" data-i18n="about_bio_ronal">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Code quality, testing, and a stable handoff between features.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="device" class="device">
-        <h3 class="title" data-i18n="device_title"> ElectroCorp I.O.T. Systems </h3>
-        <p data-i18n="device_subtitle"> Smart Plugs at your fingertips </p>
-        <ul class="grid">
-            <li class="small" style="background-image: url('img/EnchufeInteligente1.jpg');"></li>
-            <li class="small" style="background-image: url('img/EnchufeInteligente2.jpg');"></li>
-        </ul>
-        <hr>
-        <br></br>
-    </section>
-
-    <section id="direction" class="direction">
-        <h3 class="title" data-i18n="direction_title">Our Direction</h3>
-        <p class="subtitle" data-i18n="direction_subtitle" style="text-align: center; margin-bottom: 2rem;">Want to visit us or know where we operate from?</p>
-        <div class="direction-container">
-            <div class="direction-info">
-                <h4 data-i18n="direction_hq">ElectroCorp Headquarters</h4>
-                <p>
-                    <i class="fa fa-map-marker"></i>
-                    <span data-i18n="direction_address">Av. Prolongación Primavera 2390, Monterrico, Surco, Lima - Peru (UPC Headquarters)</span>
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i> contacto@electrocorp.web.pe
-                </p>
-                <p>
-                    <i class="fa fa-phone"></i> +51 987 654 321
-                </p>
-                <p>
-                    <i class="fa fa-clock-o"></i>
-                    <span data-i18n="direction_hours">Hours: Monday to Friday from 9:00 AM to 6:00 PM</span>
-                </p>
-            </div>
-            <div class="direction-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.326229569429!2d-76.96639892404097!3d-12.106596488151241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7143fbd6d5b%3A0xc34a5d3f2fcab96e!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas%20(UPC)!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <hr>
-        <br>
-    </section>
-
-    <section id="contact" class="contact">
-        <h3 class="title" data-i18n="contact_title">Join the Electrical Revolution</h3>
-        <p data-i18n="contact_subtitle">The future is efficient. Subscribe to receive saving tips, app updates, and exclusive offers on our upcoming smart plug pack.</p>
-        <form id="form-suscripcion">
-            <input type="email" id="email-boletin" placeholder="Your best email here" required>
-            <button type="submit" class="btn" data-i18n="btn_send">Submit</button>
-        </form>
-        <p id="mensaje-suscripcion" style="display: none; color: var(--main-blue); margin-top: 10px;"></p>
-        <hr>
-        <br></br>
-    </section>
-
-    <footer>
-        <ul>
-            <li><a href="#"><i class="fa fa-github-square"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-        </ul>
-        <p>Copyright(C) 2026 <a href="#" target="_blank">ElectroCorp.Web</a></p>
-        <p data-i18n="footer_rights">All rights reserved.</p>
-        <button id="btn-audio" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 15px 18px; border-radius: 50%; background: var(--main-blue); border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
-            <i class="fa fa-volume-off" id="icono-audio" style="font-size: 20px; color: #000;"></i>
-        </button>
-    </footer>
-</div>
-
-<audio id="musica-fondo" loop>
-    <source src="audio/ElectroCorp.mp3" type="audio/mp3">
-</audio>
-
-<script src="js/i18n.js"></script>
-<script src="js/search.js"></script>
-<script src="js/newsletter.js"></script>
-<script src="js/testimonials.js"></script>
-<script src="js/audio.js"></script>
-<script src="js/faq_question.js"></script>
-</body>
-</html>
-
-===== css/about.css =====
-/* Equipo — grid centrado (3+2, 2+2+1 según ancho) y brillo uniforme en todas las cards */
 .section-about {
-    background-color: var(--main-bg);
+    background:
+        radial-gradient(circle at top, rgba(66, 194, 255, 0.08), transparent 34%),
+        rgba(20, 35, 58, 0.52);
+    border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -517,7 +26,7 @@
     color: var(--text-muted);
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
-    max-width: 700px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -528,30 +37,34 @@
     justify-content: center;
     align-content: center;
     gap: 1.5rem;
-    max-width: 1020px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .card-team {
-    --team-glow: 0 0 22px rgba(0, 210, 255, 0.2), 0 0 44px rgba(0, 210, 255, 0.1);
-    background: linear-gradient(165deg, rgba(0, 210, 255, 0.1) 0%, var(--card-bg) 42%, var(--card-bg) 100%);
-    border: 1px solid rgba(0, 210, 255, 0.38);
-    border-radius: 12px;
+    background:
+        linear-gradient(165deg, rgba(66, 194, 255, 0.12) 0%, var(--card-bg) 42%, var(--card-bg) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
     padding: 1.5rem 1.25rem;
+
     text-align: left;
     flex: 0 1 300px;
     min-width: 260px;
-    max-width: 320px;
-    box-shadow: var(--team-glow);
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    max-width: 330px;
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.18s ease;
 }
 
 .card-team:hover {
-    border-color: rgba(0, 210, 255, 0.6);
-    box-shadow:
-            0 0 28px rgba(0, 210, 255, 0.35),
-            0 0 56px rgba(0, 210, 255, 0.12);
-    transform: translateY(-2px);
+    border-color: rgba(66, 194, 255, 0.46);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-4px);
 }
 
 .team-upc-badge {
@@ -562,6 +75,8 @@
     object-position: left center;
     display: block;
     margin-bottom: 0.85rem;
+
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.08));
 }
 
 .card-team h3 {
@@ -569,12 +84,13 @@
     font-size: 1.05rem;
     line-height: 1.35;
     margin-bottom: 0.4rem;
+    letter-spacing: -0.02em;
 }
 
 .team-role {
-    color: var(--text-muted);
+    color: var(--main-blue);
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 0.65rem;
 }
 
@@ -600,267 +116,46 @@
     }
 }
 
-===== css/auth.css =====
-/* Páginas de autenticación y panel — incluir styles.css en el HTML antes de este archivo */
+===== ./css/base.css =====
+/* Variables, reset, typography y secciones base */
 
-body.auth-page,
-body.dashboard-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.auth-wrap {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-.auth-card {
-    width: 100%;
-    max-width: 420px;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 2rem 2rem 1.75rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-}
-
-.auth-card .brand {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.auth-card .brand img {
-    height: 56px;
-    width: auto;
-    object-fit: contain;
-}
-
-.auth-card h1 {
-    color: var(--main-blue);
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-.auth-card p.sub {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    display: block;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.7rem 0.85rem;
-    background: var(--main-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    color: var(--text-light);
-    font-size: 1rem;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: var(--main-blue);
-    box-shadow: 0 0 0 1px rgba(0, 210, 255, 0.25);
-}
-
-.btn-full {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-.auth-footer {
-    text-align: center;
-    margin-top: 1.5rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-.auth-footer a {
-    color: var(--main-blue);
-}
-
-.auth-back {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 10;
-}
-
-.auth-back a {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-.auth-back a:hover {
-    color: var(--main-blue);
-}
-
-/* Dashboard layout */
-body.dashboard-page {
-    flex-direction: row;
-    overflow: hidden;
-}
-
-.dash-sidebar {
-    width: 260px;
-    min-height: 100vh;
-    background: rgba(10, 15, 24, 0.98);
-    border-right: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem 0;
-}
-
-.dash-logo {
-    padding: 0 1.25rem 1.5rem;
-    text-align: center;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.dash-logo img {
-    max-width: 140px;
-    height: auto;
-    object-fit: contain;
-}
-
-.dash-nav {
-    flex: 1;
-    padding: 1rem 0.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-}
-
-.dash-nav a {
-    display: block;
-    padding: 0.75rem 1rem;
-    color: var(--text-light);
-    border-radius: 8px;
-    border: 1px solid transparent;
-    transition: background 0.2s, border-color 0.2s, color 0.2s;
-}
-
-.dash-nav a:hover,
-.dash-nav a.active {
-    background: rgba(0, 210, 255, 0.08);
-    border-color: var(--border-color);
-    color: var(--main-blue);
-}
-
-.dash-logout {
-    padding: 0 1rem 0;
-    margin-top: auto;
-    border-top: 1px solid var(--border-color);
-    padding-top: 1rem;
-}
-
-.dash-logout a {
-    display: block;
-    text-align: center;
-    padding: 0.75rem 1rem;
-    color: var(--text-muted);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-}
-
-.dash-logout a:hover {
-    color: #ff6b6b;
-    border-color: rgba(255, 107, 107, 0.4);
-}
-
-.dash-main {
-    flex: 1;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-}
-
-.dash-main .logo-large {
-    margin-bottom: 1.5rem;
-}
-
-.dash-main .logo-large img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.15));
-}
-
-.dash-main .dash-hero-mascot img {
-    max-width: min(90vw, 480px);
-    max-height: min(55vh, 480px);
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 0 24px rgba(0, 210, 255, 0.2));
-}
-
-@media (max-width: 720px) {
-    body.dashboard-page {
-        flex-direction: column;
-    }
-    .dash-sidebar {
-        width: 100%;
-        min-height: auto;
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-    }
-    .dash-nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .dash-nav a {
-        flex: 1 1 45%;
-    }
-    .dash-logout {
-        margin-top: 0.5rem;
-    }
-    .dash-main {
-        min-height: auto;
-        padding: 2rem 1.25rem 3rem;
-    }
-}
-
-===== css/base.css =====
-/* Variables, reset, tipography y secciones base */
 nav li {
     list-style: none;
 }
 
 :root {
-    --main-bg: #0a0f18;
-    --text-light: #e0e6ed;
-    --text-muted: #8b9bb4;
-    --main-blue: #00d2ff;
-    --dark-blue: #0056b3;
-    --card-bg: #111a28;
-    --border-color: #1e2d42;
-    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --main-bg: #071426;
+    --bg-start: #071426;
+    --bg-middle: #0a2542;
+    --bg-end: #071426;
+
+    --topbar-bg: rgba(7, 20, 38, 0.88);
+    --surface-bg: #111f35;
+    --card-bg: #14233a;
+    --card-bg-soft: rgba(20, 35, 58, 0.78);
+
+    --text-light: #f6fbff;
+    --text-muted: #b8c7db;
+    --text-soft: #d7e6f8;
+
+    --main-blue: #42c2ff;
+    --accent-color: #42c2ff;
+    --accent-contrast: #04111f;
+    --dark-blue: #134e7a;
+
+    --border-color: rgba(160, 190, 230, 0.16);
+    --border-strong: rgba(66, 194, 255, 0.38);
+    --glow-color: rgba(66, 194, 255, 0.18);
+
+    --shadow-card:
+        0 22px 60px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+    --shadow-glow:
+        0 0 34px rgba(66, 194, 255, 0.14),
+        0 24px 70px rgba(0, 0, 0, 0.32);
+
+    --font-main: 'Roboto', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -875,18 +170,47 @@ html {
 }
 
 body {
-    background-color: var(--main-bg);
+    min-height: 100vh;
     color: var(--text-light);
     line-height: 1.6;
+    background:
+        radial-gradient(circle at top, var(--glow-color), transparent 34%),
+        linear-gradient(135deg, var(--bg-start), var(--bg-middle), var(--bg-end));
 }
 
-h1, h2, h3, h4 {
-    font-weight: 600;
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 18% 12%, rgba(66, 194, 255, 0.14), transparent 30%),
+        radial-gradient(circle at 82% 18%, rgba(37, 99, 235, 0.12), transparent 28%),
+        radial-gradient(circle at 50% 100%, rgba(66, 194, 255, 0.08), transparent 34%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    letter-spacing: -0.035em;
+}
+
+p {
+    color: var(--text-muted);
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition:
+        color 160ms ease,
+        background 160ms ease,
+        border-color 160ms ease,
+        transform 160ms ease,
+        box-shadow 160ms ease;
 }
 
 ul {
@@ -896,34 +220,55 @@ ul {
 hr {
     border: none;
     height: 3px;
-    width: 60px;
-    background-color: var(--main-blue);
-    margin: 20px auto 40px auto;
-    border-radius: 2px;
+    width: 64px;
+    background: linear-gradient(90deg, transparent, var(--main-blue), transparent);
+    margin: 28px auto 42px auto;
+    border-radius: 999px;
 }
 
 .title {
-    font-size: 2rem;
-    color: var(--main-blue);
+    font-size: clamp(2rem, 4vw, 3.15rem);
+    color: var(--text-light);
     margin-bottom: 20px;
     text-align: center;
+    line-height: 1.1;
 }
 
 section {
-    padding: 80px 10%;
-    scroll-margin-top: 100px;
+    padding: 84px 7%;
+    scroll-margin-top: 104px;
 }
 
-.description p, .goals p, .service-section > p, .device p, .contact p {
+.description p,
+.goals p,
+.service-section > p,
+.device p,
+.contact p,
+.que_frequents > p,
+.direction > p {
     text-align: center;
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto 30px auto;
     color: var(--text-muted);
-    font-size: 1.1rem;
-    line-height: 1.9;
+    font-size: 1.06rem;
+    line-height: 1.85;
 }
 
-===== css/header.css =====
+.card {
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    background:
+        linear-gradient(160deg, rgba(66, 194, 255, 0.1), transparent 36%),
+        var(--card-bg);
+    box-shadow: var(--shadow-card);
+}
+
+::selection {
+    color: var(--accent-contrast);
+    background: var(--main-blue);
+}
+
+===== ./css/header.css =====
 /* Barra de navegación */
 header {
     display: flex;
@@ -1036,140 +381,259 @@ header {
     text-shadow: 0 0 8px var(--main-blue);
 }
 
-.header-lang {
-    color: #fff !important;
-    font-size: 0.95rem;
-    padding: 0.4rem 0.35rem;
+/* --- NUEVOS ESTILOS PARA LOS BOTONES DE IDIOMA --- */
+.lang-selector {
     display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3px;
+    margin-left: 15px;
     align-items: center;
-    gap: 0.25rem;
 }
 
-.header-lang:hover {
-    color: var(--main-blue) !important;
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-===== css/hero.css =====
-/* Hero y búsqueda */
+.lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+    background-color: #00d2ff;
+    color: #000000;
+}
+
+===== ./css/hero.css =====
+/* Hero y búsqueda estilo WebApp */
+
 .hero {
     position: relative;
-    padding: 100px 20px;
-    text-align: center;
-    min-height: 90vh;
+    overflow: hidden;
+
+    min-height: calc(100vh - 76px);
+    padding: 108px 24px 88px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 36px 7% auto;
+    height: 62%;
+    max-height: 520px;
+
+    border-radius: 34px;
+    border: 1px solid var(--border-color);
+    background:
+        radial-gradient(circle at top left, rgba(66, 194, 255, 0.22), transparent 36%),
+        linear-gradient(135deg, rgba(20, 35, 58, 0.72), rgba(8, 24, 45, 0.62));
+    box-shadow: var(--shadow-card);
+    z-index: -2;
 }
 
 .hero .background-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
+
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
-    z-index: -1;
+    opacity: 0.09;
+    z-index: -3;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    max-width: 980px;
+    color: #ffffff;
+    font-size: clamp(2.5rem, 6vw, 5.1rem);
+    line-height: 0.98;
     margin-bottom: 1rem;
-    color: #fff;
+    letter-spacing: -0.07em;
+}
+
+.hero h1 + h1 {
+    color: var(--main-blue);
+    font-size: clamp(2rem, 4.6vw, 4.2rem);
+    margin-top: -0.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.hero h3 {
+    max-width: 780px;
+    margin: 0 auto 34px;
+    color: var(--text-muted);
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: normal;
 }
 
 .hero .hero-dashboard-btn {
     width: auto;
-    min-width: 12rem;
+    min-width: 13rem;
     max-width: 100%;
     margin: 0 auto 1.5rem;
-    display: inline-block;
+
+    display: inline-flex;
     font-size: 1rem;
-    padding: 0.7rem 1.75rem;
-    border-radius: 999px;
-    box-shadow: 0 4px 20px rgba(0, 210, 255, 0.25);
+    padding: 0 1.75rem;
+    border-radius: 14px;
+    box-shadow: 0 18px 36px rgba(66, 194, 255, 0.22);
 }
 
 .hero .hero-dashboard-btn:hover {
-    background: #00a8cc;
-    box-shadow: 0 6px 24px rgba(0, 210, 255, 0.35);
-}
-
-.hero h3 {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    font-weight: 400;
-    margin-bottom: 40px;
+    background: #60ccff;
+    box-shadow: 0 22px 44px rgba(66, 194, 255, 0.28);
 }
 
 .search-container {
     display: flex;
-    max-width: 500px;
+    max-width: 540px;
     width: 100%;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 30px;
+
     overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+    background: rgba(20, 35, 58, 0.78);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
 }
 
 .search-container input {
     flex: 1;
-    padding: 15px 25px;
+    min-width: 0;
+    padding: 16px 22px;
+
     border: none;
-    background: transparent;
-    color: var(--text-light);
     outline: none;
+
+    color: var(--text-light);
+    background: transparent;
+    font-size: 0.96rem;
+    font-weight: 700;
+}
+
+.search-container input::placeholder {
+    color: rgba(184, 199, 219, 0.72);
 }
 
 .search-container button {
-    padding: 15px 25px;
+    min-width: 58px;
+    padding: 15px 22px;
+
     border: none;
+    color: var(--accent-contrast);
     background: var(--main-blue);
-    color: #000;
+
     cursor: pointer;
-    transition: background 0.3s;
+    transition:
+        background 160ms ease,
+        transform 160ms ease;
 }
 
 .search-container button:hover {
-    background: #00a8cc;
+    background: #60ccff;
 }
 
-===== css/responsive.css =====
+.hero hr {
+    margin-bottom: 0;
+}
+
+===== ./css/responsive.css =====
 /* Breakpoints móviles y tablet */
-@media (max-width: 768px) {
+
+@media (max-width: 1280px) {
     header {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 16px 18px;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 24px;
     }
 
     .header-brand {
-        order: 1;
-    }
-
-    .header-actions {
-        order: 2;
-        margin-left: auto;
+        width: 100%;
     }
 
     .header-nav {
-        order: 3;
-        flex-basis: 100%;
-        max-width: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 4px;
     }
 
     .header-nav-list {
-        gap: 0.4rem 0.75rem;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: max-content;
     }
 
-    .header-nav-link {
-        font-size: 0.85rem;
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 980px) {
+    section {
+        padding: 72px 6%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero::before {
+        inset: 28px 5% auto;
+        height: 68%;
+    }
+
+    .direction-container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px 18px;
+    }
+
+    .header-brand-link {
+        font-size: 1.15rem;
+    }
+
+    .header-site-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .header-actions {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 82px 18px 68px;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
+    }
+
+    .hero h1 + h1 {
+        font-size: 2.2rem;
     }
 
     .hero .hero-dashboard-btn {
@@ -1178,13 +642,21 @@ header {
         max-width: 20rem;
     }
 
+    .search-container {
+        border-radius: 16px;
+    }
+
     #form-suscripcion {
         flex-direction: column;
     }
 
+    #form-suscripcion .btn {
+        width: 100%;
+    }
+
     .testimonial-nav {
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
     }
 
     .card-testimonial {
@@ -1197,7 +669,56 @@ header {
     }
 }
 
-===== css/sections.css =====
+@media (max-width: 560px) {
+    section {
+        padding: 60px 18px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero h1 + h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero h3 {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container button {
+        width: 100%;
+    }
+
+    .service-card,
+    .checkout-card {
+        padding: 22px;
+    }
+
+    .checkout-row {
+        grid-template-columns: 1fr;
+    }
+
+    .recommended-badge {
+        position: static;
+        width: fit-content;
+    }
+
+    .direction-info,
+    .direction-map {
+        min-width: 100%;
+    }
+}
+
+===== ./css/sections.css =====
 /* Grillas, servicios, planes, dispositivo, formulario, footer, botones */
 .grid {
     display: flex;
@@ -1222,21 +743,29 @@ header {
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
+
+.que_frequents {
+    background-color: #111622;
+    padding: 60px 0;
+    width: 100%;
+}
+
 .faq-container {
+    background-color: #111622;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .faq-item {
-    background-color: #f9f9f9;
+    background-color: #111622;
     margin-bottom: 15px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #2a344a;
     overflow: hidden;
 }
 
-.faq_q1 {
+.faq_q1, .faq_q2, .faq_q3 {
     width: 100%;
     padding: 18px 20px;
     font-size: 16px;
@@ -1248,119 +777,36 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #333;
+    color: #ffffff; /* Texto blanco */
     transition: background-color 0.3s ease;
 }
 
-.faq_q1:hover, .faq-question.active {
-    background-color: #e2e8f0;
+.faq_q1:hover, .faq_q1.active,
+.faq_q2:hover, .faq_q2.active,
+.faq_q3:hover, .faq_q3.active {
+    background-color: #1a2235;
 }
 
-.faq_q1 i {
+.faq_q1 i, .faq_q2 i, .faq_q3 i {
     transition: transform 0.3s ease;
 }
 
-.faq_q1.active i {
+.faq_q1.active i, .faq_q2.active i, .faq_q3.active i {
     transform: rotate(180deg);
 }
 
-.faq_a1 {
+.faq_a1, .faq_a2, .faq_a3 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    background-color: #fff;
+    background-color: #111622;
     padding: 0 20px;
 }
 
-.faq_a1 p {
+/* 5. El texto de las respuestas */
+.faq_a1 p, .faq_a2 p, .faq_a3 p {
     padding: 15px 0;
-    color: #555;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.faq_q2 {
-    width: 100%;
-    padding: 18px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #333;
-    transition: background-color 0.3s ease;
-}
-
-.faq_q2:hover, .faq-question.active {
-    background-color: #e2e8f0;
-}
-
-.faq_q2 i {
-    transition: transform 0.3s ease;
-}
-
-.faq_q2.active i {
-    transform: rotate(180deg);
-}
-
-.faq_a2 {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    background-color: #fff;
-    padding: 0 20px;
-}
-
-.faq_a2 p {
-    padding: 15px 0;
-    color: #555;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.faq_q3 {
-    width: 100%;
-    padding: 18px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #333;
-    transition: background-color 0.3s ease;
-}
-
-.faq_q3:hover, .faq-question.active {
-    background-color: #e2e8f0;
-}
-
-.faq_q3 i {
-    transition: transform 0.3s ease;
-}
-
-.faq_q3.active i {
-    transform: rotate(180deg);
-}
-
-.faq_a3 {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    background-color: #fff;
-    padding: 0 20px;
-}
-
-.faq_a3 p {
-    padding: 15px 0;
-    color: #555;
+    color: #d1d5db;
     margin: 0;
     line-height: 1.6;
 }
@@ -1450,12 +896,6 @@ header {
     background-color: var(--main-bg);
 }
 
-#contact {
-    background-color: var(--card-bg);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
 #form-suscripcion {
     display: flex;
     justify-content: center;
@@ -1480,6 +920,11 @@ header {
 
 #form-suscripcion .btn {
     width: auto;
+}
+.direction{
+    background-color: #111622;
+    padding: 60px 0;
+    width: 100%;
 }
 .direction-container {
     display: flex;
@@ -1556,8 +1001,8 @@ footer p a {
     color: var(--main-blue);
 }
 
-===== css/styles.css =====
-/* Punto de entrada: importar módulos en orden */
+
+===== ./css/styles.css =====
 @import url("base.css");
 @import url("header.css");
 @import url("hero.css");
@@ -1566,54 +1011,73 @@ footer p a {
 @import url("about.css");
 @import url("responsive.css");
 
-===== css/testimonials.css =====
-/* Carrusel de testimonios */
+
+===== ./css/testimonials.css =====
+/* Carrusel de testimonios estilo WebApp */
+
 .reviews.section-testimonials {
-    background-color: var(--card-bg);
+    background:
+        radial-gradient(circle at top, rgba(66, 194, 255, 0.09), transparent 34%),
+        rgba(20, 35, 58, 0.68);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 60px;
+    padding-bottom: 64px;
 }
 
 .testimonial-slider-outer {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    max-width: 1100px;
+    gap: 0.75rem;
+    max-width: 1120px;
     margin: 0 auto;
     position: relative;
 }
 
 .testimonial-nav {
     flex: 0 0 auto;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+
+    border-radius: 14px;
     border: 1px solid var(--border-color);
-    background: var(--main-bg);
+
+    background: rgba(255, 255, 255, 0.04);
     color: var(--main-blue);
+
     cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+    transition:
+        background 0.18s ease,
+        color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.18s ease,
+        border-color 0.18s ease;
     z-index: 2;
 }
 
 .testimonial-nav:hover {
-    background: rgba(0, 210, 255, 0.12);
-    box-shadow: 0 0 12px rgba(0, 210, 255, 0.2);
-    color: #fff;
+    background: rgba(66, 194, 255, 0.1);
+    border-color: rgba(66, 194, 255, 0.38);
+    box-shadow: 0 0 18px rgba(66, 194, 255, 0.16);
+    color: #ffffff;
+    transform: translateY(-1px);
 }
 
 .testimonial-slider {
     display: flex;
     gap: 1.25rem;
     overflow-x: auto;
+
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+
     padding: 0.5rem 0.25rem 1.25rem;
     flex: 1 1 auto;
+
     -webkit-overflow-scrolling: touch;
     scrollbar-color: var(--main-blue) var(--border-color);
     scrollbar-width: thin;
@@ -1624,13 +1088,13 @@ footer p a {
 }
 
 .testimonial-slider::-webkit-scrollbar-track {
-    background: var(--main-bg);
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 999px;
 }
 
 .testimonial-slider::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 4px;
+    background: rgba(66, 194, 255, 0.45);
+    border-radius: 999px;
 }
 
 .testimonial-slider::-webkit-scrollbar-thumb:hover {
@@ -1638,53 +1102,401 @@ footer p a {
 }
 
 .card-testimonial {
-    flex: 0 0 min(300px, 80vw);
-    max-width: 320px;
+    flex: 0 0 min(310px, 82vw);
+    max-width: 330px;
     scroll-snap-align: start;
-    background: var(--main-bg);
+
+    background:
+        linear-gradient(160deg, rgba(66, 194, 255, 0.09), transparent 36%),
+        var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.1rem;
+    border-radius: 24px;
+    padding: 1.15rem;
+
     text-align: left;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
-    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow-card);
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.18s ease;
 }
 
 .card-testimonial:hover {
-    border-color: rgba(0, 210, 255, 0.35);
-    box-shadow: 0 8px 28px rgba(0, 210, 255, 0.12);
+    transform: translateY(-4px);
+    border-color: rgba(66, 194, 255, 0.38);
+    box-shadow: var(--shadow-glow);
 }
 
 .testimonial-avatar {
     width: 100%;
-    height: 160px;
+    height: 165px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
+
+    border-radius: 18px;
+    margin-bottom: 0.85rem;
     background: #0a0f18;
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .card-testimonial h3 {
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
 }
 
 .testimonial-role {
     color: var(--main-blue);
     font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-weight: 900;
+    margin-bottom: 0.55rem;
 }
 
 .testimonial-quote {
     color: var(--text-muted);
     font-size: 0.95rem;
-    line-height: 1.55;
+    line-height: 1.6;
     font-style: italic;
 }
 
-===== js/audio.js =====
+===== ./index.html =====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroCorp | Smart Energy Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="contenido-web">
+    <header>
+        <div class="header-brand">
+            <a href="index.html" class="header-brand-link">
+                <img src="img/logo.png" alt="ElectroCorp" class="header-site-logo" width="44" height="44">
+                <span>ElectroCorp.Web</span>
+            </a>
+        </div>
+        <nav class="header-nav" aria-label="Secciones">
+            <ul class="header-nav-list">
+                <li><a href="#hero" class="header-nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="#service" class="header-nav-link" data-i18n="nav_plans">Pricing</a></li>
+                <li><a href="#que_frequents" class="header-nav-link" data-i18n="nav_que_frequents">Questions Frequent</a></li>
+                <li><a href="#device" class="header-nav-link" data-i18n="nav_smart">Smart Plugs</a></li>
+                <li><a href="#reviews" class="header-nav-link" data-i18n="nav_reviews">Reviews</a></li>
+                <li><a href="#description" class="header-nav-link" data-i18n="nav_desc">Description</a></li>
+                <li><a href="#goals" class="header-nav-link" data-i18n="nav_goals">Goals</a></li>
+                <li><a href="#about" class="header-nav-link" data-i18n="nav_about">About us</a></li>
+                <li><a href="#direction" class="header-nav-link" data-i18n="nav_direction">Direction</a></li>
+                <li><a href="#contact" class="header-nav-link" data-i18n="nav_support">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="https://electrocorp-webapp.onrender.com/iam/login" class="header-btn header-btn-outline" data-i18n="nav_login"> Iniciar sesión </a>
+            <a href="https://electrocorp-webapp.onrender.com/iam/register" class="header-btn header-btn-primary" data-i18n="nav_register"> Registrarse</a>
+            <div class="lang-selector">
+                <button onclick="setLanguage('en')" class="lang-btn active" id="btn-lang-en">EN</button>
+                <button onclick="setLanguage('es')" class="lang-btn" id="btn-lang-es">ES</button>
+                <button onclick="setLanguage('pt')" class="lang-btn" id="btn-lang-pt">PT</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="background-image" style="background-image: url('img/FondoPantalla2.png');"></div>
+        <h1 data-i18n="hero_title"> Take control of your home's electricity consumption </h1>
+        <h1 data-i18n="hero_title2"> Save up to 20% on energy in your home </h1>
+        <a href="https://electrocorp-webapp.onrender.com/energy-monitoring/dashboard" class="btn hero-dashboard-btn" data-i18n="hero_dashboard">Go to ElectroCorp Web App</a>
+        <h3 data-i18n="hero_subtitle"> 15% discount for 3 months for the first 50 new users </h3>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search keyword or question" id="searchInput">
+            <button type="button" id="btn-buscar"><i class="fa fa-search"></i></button>
+        </div>
+        <hr>
+    </section>
+
+    <section id="service" class="service-section">
+        <h3 class="title" data-i18n="plans_title">Our Plans</h3>
+        <p data-i18n="plans_subtitle">Choose the plan that best fits your consumption and infrastructure size.</p>
+        <div class="service-grid">
+
+            <div class="service-card premium">
+                <h4>Starter Plan</h4>
+                <h2 data-i18n="normal_plan_price"> S/ 18.90 <span> <s> S/25.90 </s> </span></h2>
+                <p data-i18n="normal_plan_desc">Basic energy management for small homes.</p>
+                <ul>
+                    <li data-i18n="normal_plan_li1"><i class="fa fa-check"></i> Up to 5 smart devices</li>
+                    <li data-i18n="normal_plan_li2"><i class="fa fa-check"></i> Basic energy panel</li>
+                    <li data-i18n="normal_plan_li3"><i class="fa fa-check"></i> Email alerts</li>
+                </ul>
+                <a href="https://electrocorp-webapp.onrender.com/energy-monitoring/dashboard" class="btn" data-i18n="btn_start">Buy Service</a>
+            </div>
+
+            <div class="service-card premium">
+                <h4>Professional Plan</h4>
+                <h2 data-i18n="pro_plan_price"> S/ 48.90 <span> <s> S/52.90 </s> </span></h2>
+                <p data-i18n="pro_plan_desc">Advanced control for homes and small businesses</p>
+                <ul>
+                    <li data-i18n="pro_plan_li1"><i class="fa fa-star"></i> Up to 20 smart devices</li>
+                    <li data-i18n="pro_plan_li2"><i class="fa fa-star"></i> Advanced energy analytics</li>
+                    <li data-i18n="pro_plan_li3"><i class="fa fa-star"></i> Automation routines</li>
+                    <li data-i18n="pro_plan_li4"><i class="fa fa-star"></i> Monthly reports</li>
+                </ul>
+                <a href="https://electrocorp-webapp.onrender.com/energy-monitoring/dashboard" class="btn" data-i18n="btn_pro">Buy Service</a>
+            </div>
+
+            <div class="service-card premium">
+                <h4>Enterprise Plan</h4>
+                <h2 data-i18n="plan_ent_price"> S/ 128.90 <span> <s> S/135.90 </s> </span></h2>
+                <p data-i18n="plan_ent_desc">Complete platform for multiple locations or businesses.</p>
+                <ul>
+                    <li data-i18n="plan_ent_li1"><i class="fa fa-star"></i> Multiple retail locations</li>
+                    <li data-i18n="plan_ent_li2"><i class="fa fa-star"></i> Access profiles for the team</li>
+                    <li data-i18n="plan_ent_li3"><i class="fa fa-star"></i> Advanced alerts</li>
+                    <li data-i18n="plan_ent_li4"><i class="fa fa-star"></i> Priority support</li>
+                </ul>
+                <a href="https://electrocorp-webapp.onrender.com/energy-monitoring/dashboard" class="btn" data-i18n="btn_contact">Buy Service</a>
+            </div>
+        </div>
+        <hr>
+        <br></br>
+    </section>
+
+    <section id="que_frequents" class="que_frequents">
+        <h3 class="title" data-i18n="faq_title">Frequently Asked Questions about Consumption and Saving</h3>
+        <p class="subtitle" data-i18n="faq_subtitle" style="text-align: center; margin-bottom: 2rem;">Learn how to manage your energy smartly</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq_q1">
+                    <span data-i18n="faq_q1">Which appliances consume the most electricity?</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="faq_a1">
+                    <p data-i18n="faq_a1">Devices that generate heat or cold consume the most. This includes electric water heaters, refrigerators, irons, and microwaves.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq_q2">
+                    <span data-i18n="faq_q2">How does a smart plug help save energy?</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="faq_a2">
+                    <p data-i18n="faq_a2">It allows you to turn off devices remotely, avoid 'vampire' power consumption, and schedule automatic usage times.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq_q3">
+                    <span data-i18n="faq_q3">What is stand by power and how to avoid it?</span>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="faq_a3">
+                    <p data-i18n="faq_a3">It is the energy used by devices in standby mode. It represents up to 10% of the bill. Avoid it by unplugging or using Smart Plugs.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+    </section>
+
+    <section id="device" class="device">
+        <h3 class="title" data-i18n="device_title"> ElectroCorp I.O.T. Systems </h3>
+        <p data-i18n="device_subtitle"> Smart Plugs at your fingertips </p>
+        <ul class="grid">
+            <li class="small" style="background-image: url('img/EnchufeInteligente1.jpg');"></li>
+            <li class="small" style="background-image: url('img/EnchufeInteligente2.jpg');"></li>
+        </ul>
+        <hr>
+        <br></br>
+    </section>
+
+    <section id="reviews" class="reviews section-testimonials">
+        <h3 class="title" data-i18n="testimonials_sectionTitle">What our clients say</h3>
+        <div class="testimonial-slider-outer">
+            <button type="button" class="testimonial-nav testimonial-nav--prev" data-i18n-aria="meta.sliderPrev" aria-label="Previous reviews">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="testimonial-slider" id="testimonialSlider" data-i18n-aria="meta.testimonialsSlider" aria-label="Client reviews slider" tabindex="0">
+                <article class="card card-testimonial">
+                    <img class="testimonial-avatar" src="https://www.infobae.com/resizer/v2/CPGKD5EXLZEO7OSWENSND5OVTY.jpg?auth=8306f0fc4fae2e4732d6c494ba9c1b392066bcceee750fc18bac160e24c62897&amp;smart=true&amp;width=992&amp;height=558&amp;quality=85" alt="Valentino Cruz">
+                    <h3>Valentino Cruz</h3>
+                    <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
+                    <p class="testimonial-quote" data-i18n="testimonials_q1">"ElectroCorp.Web shows which appliance is really driving watts in our home. I lowered the bill without rewiring the house or hiring special technicians—it finally feels like smart energy, not a luxury we can't afford."</p>
+                </article>
+                <article class="card card-testimonial">
+                    <img class="testimonial-avatar" src="https://i.pinimg.com/736x/46/91/97/46919703baafce4552b2fa913bdf6544.jpg" alt="Thiago Medina">
+                    <h3>Thiago Medina</h3>
+                    <p class="testimonial-role" data-i18n="testimonials_roleFree">Free user</p>
+                    <p class="testimonial-quote" data-i18n="testimonials_q2">"We had the setup running over our existing switches and outlets in an afternoon—no broken walls, no new grid. That plug-and-play piece is what sold us; generic apps never matched how we actually use power in Peru."</p>
+                </article>
+                <article class="card card-testimonial">
+                    <img class="testimonial-avatar" src="https://www.latercera.com/resizer/v2/CP57ROPIQRBABHJVPYNOD5T3W4.jpeg?auth=5ddd40fdc5b1cfbd6dd64c417ba58ba4797929451bead5919d0a9a0de16f0524&amp;smart=true&amp;width=800&amp;height=1194&amp;quality=70" alt="Lautaro Reyes">
+                    <h3>Lautaro Reyes</h3>
+                    <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
+                    <p class="testimonial-quote" data-i18n="testimonials_q3">"I schedule my appliances and watch consumption in real time. When something stayed on all night, the alert saved me an unnecessary cost—our electricity spend was already a pain point, and this gives us real control."</p>
+                </article>
+                <article class="card card-testimonial">
+                    <img class="testimonial-avatar" src="https://lastfm.freetls.fastly.net/i/u/ar0/795e76529611a50bc65374e23f1e6161.jpg" alt="Barbara Cantarero">
+                    <h3>Barbara Cantarero</h3>
+                    <p class="testimonial-role" data-i18n="testimonials_rolePremium">Premium customer</p>
+                    <p class="testimonial-quote" data-i18n="testimonials_q4">"The web platform is easy to read—not another complicated dashboard. I finally see local consumption the way it really happens, and I plan the week with real data instead of guessing on the bill."</p>
+                </article>
+                <article class="card card-testimonial">
+                    <img class="testimonial-avatar" src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/a/1/a/0a1a2368485c5fea7bb5aa9ca3377a27.jpg" alt="Matias Solano">
+                    <h3>Matias Solano</h3>
+                    <p class="testimonial-role" data-i18n="testimonials_roleFree">Free user</p>
+                    <p class="testimonial-quote" data-i18n="testimonials_q5">"We run everything through ElectroCorp.Web: remote on/off, schedules, and monitoring from the app. For our household, democratizing home automation and cutting energy costs is the point—and this is the first stack that made it feel realistic."</p>
+                </article>
+            </div>
+            <button type="button" class="testimonial-nav testimonial-nav--next" data-i18n-aria="meta.sliderNext" aria-label="Next reviews">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <hr>
+    </section>
+
+    <section id="description" class="description">
+        <br></br>
+        <h3 class="title" data-i18n="desc_title"> Start-Up Description</h3>
+        <p data-i18n="desc_text1">
+            We are a tech startup focused on democratizing home automation and energy efficiency for Peruvian households.
+        <p data-i18n="desc_text2">
+            Currently, making a house "smart" is expensive, requires complex work (cables, technicians) and the applications are usually generic or difficult to understand, in addition to the high cost of electricity.
+        <p data-i18n="desc_text3">
+            A plug-and-play IoT ecosystem that installs in minutes on existing switches and sockets. It allows for remote control and real-time consumption monitoring without the need for any construction work in the home.</p>
+        <hr>
+        <br></br>
+    </section>
+
+    <section id="goals" class="goals">
+        <h3 class="title" data-i18n="goals_title"> Our Goals</h3>
+        <p data-i18n="goals_text">
+            To develop an easy-to-understand plug-and-play Internet of Things (IoT) ecosystem that
+            allows families and new businesses in Peru to efficiently manage their electrical consumption, optimizing their
+            economic expenses and promoting sustainability through a software platform: an app and/or website.
+        </p>
+        <ul class="grid">
+            <li class="small" style="background-image: url('img/sensorLuz.png');"></li>
+            <li class="small" style="background-image: url('img/AppImage.jpg');"></li>
+        </ul>
+        <hr>
+        <br></br>
+    </section>
+
+    <section id="about" class="section-about">
+        <div class="container-about">
+            <h2 class="title about-title" data-i18n="about_title">About us</h2>
+            <p class="about-lead" data-i18n="about_lead">UPC Software Engineering students building ElectroCorp.Web</p>
+            <div class="container-team-div">
+                <article class="card card-team">
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+                    <h3>Diego Alexander Cabrejos Chocco</h3>
+                    <p class="team-role" data-i18n="about_role_diego">Logic &amp; backend-oriented</p>
+                    <p class="team-bio" data-i18n="about_bio_diego">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, and Java. Contributes to backend structure and APIs for ElectroCorp.Web.</p>
+                </article>
+                <article class="card card-team">
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+                    <h3>Sebastian Oswaldo Tavara Correa</h3>
+                    <p class="team-role" data-i18n="about_role_seb">Data &amp; monitoring-oriented</p>
+                    <p class="team-bio" data-i18n="about_bio_seb">Software Engineering student at UPC. C++, HTML, CSS, JavaScript. Data flow, metrics, and power-usage views for the platform.</p>
+                </article>
+                <article class="card card-team">
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+                    <h3>Jairo Mathias Santiago Atanacio</h3>
+                    <p class="team-role" data-i18n="about_role_gho">Logic &amp; integration-oriented</p>
+                    <p class="team-bio" data-i18n="about_bio_gho">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Connects services and features end-to-end.</p>
+                </article>
+                <article class="card card-team">
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+                    <h3>Jean Franck Loa Rojas</h3>
+                    <p class="team-role" data-i18n="about_role_alex">UI / UX &amp; frontend-oriented</p>
+                    <p class="team-bio" data-i18n="about_bio_alex">Software Engineering student at UPC. C++, HTML, CSS, JavaScript, C#, Python, Java, and Flutter. Design and interface for the ElectroCorp.Web platform and the app.</p>
+                </article>
+                <article class="card card-team">
+                    <img class="team-upc-badge" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="UPC">
+                    <h3>Timothy Documet Romero</h3>
+                    <p class="team-role" data-i18n="about_role_ronal">Logic &amp; quality-oriented</p>
+                    <p class="team-bio" data-i18n="about_bio_ronal">Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Code quality, testing, and a stable handoff between features.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="direction" class="direction">
+        <h3 class="title" data-i18n="direction_title">Our Direction</h3>
+        <p class="subtitle" data-i18n="direction_subtitle" style="text-align: center; margin-bottom: 2rem;">Want to visit us or know where we operate from?</p>
+        <div class="direction-container">
+            <div class="direction-info">
+                <h4 data-i18n="direction_hq">ElectroCorp Headquarters</h4>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    <span data-i18n="direction_address">Av. Prolongación Primavera 2390, Monterrico, Surco, Lima - Peru (UPC Headquarters)</span>
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i> contacto@electrocorp.web.pe
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i> +51 987 654 321
+                </p>
+                <p>
+                    <i class="fa fa-clock-o"></i>
+                    <span data-i18n="direction_hours">Hours: Monday to Friday from 9:00 AM to 6:00 PM</span>
+                </p>
+            </div>
+            <div class="direction-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.326229569429!2d-76.96639892404097!3d-12.106596488151241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7143fbd6d5b%3A0xc34a5d3f2fcab96e!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas%20(UPC)!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+        <br>
+    </section>
+
+    <section id="contact" class="contact">
+        <h3 class="title" data-i18n="contact_title">Join the Electrical Revolution</h3>
+        <p data-i18n="contact_subtitle">The future is efficient. Subscribe to receive saving tips, app updates, and exclusive offers on our upcoming smart plug pack.</p>
+        <form id="form-suscripcion">
+            <input type="email" id="email-boletin" placeholder="Your best email here" required>
+            <button type="submit" class="btn" data-i18n="btn_send">Submit</button>
+        </form>
+        <p id="mensaje-suscripcion" style="display: none; color: var(--main-blue); margin-top: 10px;"></p>
+        <hr>
+        <br></br>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+        <p>Copyright(C) 2026 <a href="#" target="_blank">ElectroCorp.Web</a></p>
+        <p data-i18n="footer_rights">All rights reserved.</p>
+        <button id="btn-audio" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; padding: 15px 18px; border-radius: 50%; background: var(--main-blue); border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+            <i class="fa fa-volume-off" id="icono-audio" style="font-size: 20px; color: #000;"></i>
+        </button>
+    </footer>
+</div>
+
+<audio id="musica-fondo" loop>
+    <source src="audio/ElectroCorp.mp3" type="audio/mp3">
+</audio>
+
+<script src="js/i18n.js"></script>
+<script src="js/search.js"></script>
+<script src="js/newsletter.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/faq_question.js"></script>
+</body>
+</html>
+
+
+===== ./js/audio.js =====
 /* Música de fondo: botón flotante */
 document.addEventListener("DOMContentLoaded", () => {
     const musica = document.getElementById("musica-fondo");
@@ -1710,7 +1522,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-===== js/faq_question.js =====
+
+===== ./js/faq_question.js =====
 ﻿document.addEventListener("DOMContentLoaded", function() {
     const faqQ1 = document.querySelectorAll(".faq_q1");
 
@@ -1786,8 +1599,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-===== js/i18n.js =====
-/* Traducciones ES/EN y toggle de idioma (expuesto para onclick en header) */
+
+===== ./js/i18n.js =====
+/* Traducciones ES/EN/PT y selección de idioma */
 const translations = {
     es: {
         nav_home: "Inicio",
@@ -1826,19 +1640,16 @@ const translations = {
         about_bio_ronal: "Estudiante de Ingeniería de Software en UPC. C++, HTML, CSS y JavaScript. Calidad de código, pruebas y entregas estables entre funcionalidades.",
         nav_login: "Iniciar sesión",
         nav_register: "Registrarse",
-
         hero_title: "Domina el consumo electrico de tu hogar",
         hero_title2: "Ahorra hasta un 20% de energia en tu hogar",
         hero_dashboard: "Ir al dashboard",
         hero_subtitle: "15% de descuento por 3 meses para los primeros 50 nuevos usuarios",
-
         desc_title: "Descripción de la Start-Up",
         desc_text1: "Es una startup de tecnología enfocada en democratizar la domótica y la eficiencia energética para los hogares peruanos.",
         desc_text2: "Actualmente, convertir una casa en \"inteligente\" es caro, requiere un trabajo complejo (cables, técnicos) y las aplicaciones suelen ser genéricas o difíciles de entender, además del alto coste de la electricidad.",
         desc_text3: "Un ecosistema IoT plug-and-play que se instala en minutos en interruptores y enchufes existentes. Permite el control remoto y la monitorización del consumo en tiempo real sin necesidad de realizar obras en el hogar.",
         goals_title: "Nuestros Objetivos",
         goals_text: "Desarrollar un ecosistema de Internet de las Cosas (IoT) de arquitectura plug-and-play de fácil entendimiento que permita a las familias y nuevos negocios en el Perú gestionar su consumo eléctrico de manera eficiente, optimizando su gasto económico y fomentando la sostenibilidad a través de una plataforma de software: una app y/o sitio web.",
-
         faq_title: "Preguntas Frecuentes sobre Consumo y Ahorro",
         faq_subtitle: "Aprende cómo gestionar tu energía de forma inteligente",
         faq_q1: "¿Qué electrodomésticos consumen más electricidad?",
@@ -1847,34 +1658,35 @@ const translations = {
         faq_a2: "Permite apagar los dispositivos de forma remota, evitar el consumo de energía en modo de espera y programar horarios de uso automáticos.",
         faq_q3: "¿Qué es el consumo fantasma y cómo evitarlo?",
         faq_a3: "Es la energía que usan los aparatos en standby. Representa hasta un 10% del recibo. Se evita desenchufando o usando Smart Plugs.",
-
         plans_title: "Nuestros Planes",
         plans_subtitle: "Elige el plan que mejor se adapte a tu consumo y tamaño de infraestructura.",
-        plan_free_price: "S/ 12.90 <span> <s> S/18.90 </s> </span>",
-        plan_free_desc: "Ideal para departamentos y casas tradicionales.",
-        normal_plan_li1: "Hasta 3 enchufes inteligentes",
-        normal_plan_li2: "Monitoreo de watts en tiempo real",
-        normal_plan_li3: "App ElectroCorp Básica",
-        btn_start: "Contactar ahora",
-
-        plan_ent_price: "S/ 75.90 <span> <s> S/85.90 </s> </span>",
-        plan_ent_desc: "Ideal para empresas, oficinas y casas grandes.",
-        plan_ent_li1: "Admite 18 enchufes inteligentes para su montaje.",
-        plan_ent_li2: "Dashboard Administrativo Web",
-        plan_ent_li3: "Monitoreo de watts en tiempo real",
-        plan_ent_li4: "App ElectroCorp Básica",
-        plan_ent_li5: "Soporte técnico 24/7",
-
-        btn_contact: "Contactar ahora",
+        normal_plan_price: "S/ 18.90 <span> <s> S/25.90 </s> </span>",
+        normal_plan_desc: "Gestión básica de energía para hogares pequeños.",
+        normal_plan_li1: "Hasta 5 dispositivos inteligentes",
+        normal_plan_li2: "Panel de energía básico",
+        normal_plan_li3: "Alertas por correo electrónico",
+        btn_start: "Comprar Servicio",
+        pro_plan_price: "S/ 48.90 <span> <s> S/52.90 </s> </span>",
+        pro_plan_desc: "Control avanzado para hogares y pequeños negocios.",
+        pro_plan_li1: "Hasta 20 dispositivos inteligentes",
+        pro_plan_li2: "Análisis avanzado de energía",
+        pro_plan_li3: "Rutinas de automatización",
+        pro_plan_li4: "Reportes mensuales",
+        btn_pro: "Comprar Servicio",
+        plan_ent_price: "S/ 128.90 <span> <s> S/135.90 </s> </span>",
+        plan_ent_desc: "Plataforma completa para múltiples ubicaciones o empresas.",
+        plan_ent_li1: "Múltiples ubicaciones comerciales",
+        plan_ent_li2: "Perfiles de acceso para el equipo",
+        plan_ent_li3: "Alertas avanzadas",
+        plan_ent_li4: "Soporte prioritario",
+        btn_contact: "Comprar Servicio",
         device_title: "Sistemas I.O.T. de ElectroCorp",
         device_subtitle: "Enchufes Inteligentes a tu alcance",
-
         direction_title: "Nuestra Dirección",
         direction_subtitle: "¿Quieres visitarnos o saber desde dónde operamos?",
         direction_hq: "Sede Central ElectroCorp",
         direction_address: "Av. Prolongación Primavera 2390, Monterrico, Surco, Lima - Perú (Sede UPC)",
         direction_hours: "Horario: Lunes a Viernes de 9:00 AM a 6:00 PM",
-
         contact_title: "Únete a la Revolución Eléctrica",
         contact_subtitle: "El futuro es eficiente. Suscríbete para recibir consejos de ahorro, actualizaciones de la app y ofertas exclusivas en nuestro próximo pack de enchufes inteligentes.",
         btn_send: "Enviar",
@@ -1917,19 +1729,16 @@ const translations = {
         about_bio_ronal: "Software Engineering student at UPC. C++, HTML, CSS, and JavaScript. Code quality, testing, and reliable handoffs between features.",
         nav_login: "Log in",
         nav_register: "Sign up",
-
         hero_title: "Take control of your home's electricity consumption",
         hero_title2: "Save up to 20% on energy in your home",
         hero_dashboard: "Go to dashboard",
         hero_subtitle: "15% discount for 3 months for the first 50 new users",
-
         desc_title: "Start-Up Description",
         desc_text1: "We are a tech startup focused on democratizing home automation and energy efficiency for Peruvian households.",
         desc_text2: "Currently, making a house \"smart\" is expensive, requires complex work (cables, technicians) and the applications are usually generic or difficult to understand, in addition to the high cost of electricity.",
         desc_text3: "A plug-and-play IoT ecosystem that installs in minutes on existing switches and sockets. It allows for remote control and real-time consumption monitoring without the need for any construction work in the home.",
         goals_title: "Our Goals",
         goals_text: "To develop an easy-to-understand plug-and-play Internet of Things (IoT) ecosystem that allows families and new businesses in Peru to efficiently manage their electrical consumption, optimizing their economic expenses and promoting sustainability through a software platform: an app and/or website.",
-
         faq_title: "Frequently Asked Questions about Consumption and Saving",
         faq_subtitle: "Learn how to manage your energy smartly",
         faq_q1: "Which appliances consume the most electricity?",
@@ -1938,38 +1747,128 @@ const translations = {
         faq_a2: "It allows you to turn off devices remotely, avoid 'vampire' power consumption, and schedule automatic usage times.",
         faq_q3: "What is stand by power and how to avoid it?",
         faq_a3: "It is the energy used by devices in standby mode. It represents up to 10% of the bill. Avoid it by unplugging or using Smart Plugs.",
-
         plans_title: "Our Plans",
         plans_subtitle: "Choose the plan that best fits your consumption and infrastructure size.",
-        plan_free_price: "S/ 12.90 <span> <s> S/18.90 </s> </span>",
-        plan_free_desc: "Ideal for apartments and traditional homes.",
-        normal_plan_li1: "Support 3 Smart Plugs for mount",
-        normal_plan_li2: "Real-time watt monitoring",
-        normal_plan_li3: "Basic ElectroCorp App",
-        btn_start: "Contact Now",
-
-        plan_ent_price: "S/ 75.90 <span> <s> S/85.90 </s> </span>",
-        plan_ent_desc: "Ideal for businesses, offices, and large homes.",
-        plan_ent_li1: "Support 18 Smart Plugs for mount",
-        plan_ent_li2: "Web Administrative Dashboard",
-        plan_ent_li3: "Real-time watt monitoring",
-        plan_ent_li4: "Basic ElectroCorp App",
-        plan_ent_li5: "24/7 Technical Support",
-        btn_contact: "Contact Now",
-
+        normal_plan_price: "S/ 18.90 <span> <s> S/25.90 </s> </span>",
+        normal_plan_desc: "Basic energy management for small homes.",
+        normal_plan_li1: "Up to 5 smart devices",
+        normal_plan_li2: "Basic energy panel",
+        normal_plan_li3: "Email alerts",
+        btn_start: "Buy Service",
+        pro_plan_price: "S/ 48.90 <span> <s> S/52.90 </s> </span>",
+        pro_plan_desc: "Advanced control for homes and small businesses.",
+        pro_plan_li1: "Up to 20 smart devices",
+        pro_plan_li2: "Advanced energy analytics",
+        pro_plan_li3: "Automation routines",
+        pro_plan_li4: "Monthly reports",
+        btn_pro: "Buy Service",
+        plan_ent_price: "S/ 128.90 <span> <s> S/135.90 </s> </span>",
+        plan_ent_desc: "Complete platform for multiple locations or businesses.",
+        plan_ent_li1: "Multiple retail locations",
+        plan_ent_li2: "Access profiles for the team",
+        plan_ent_li3: "Advanced alerts",
+        plan_ent_li4: "Priority support",
+        btn_contact: "Buy Service",
         device_title: "ElectroCorp I.O.T. Systems",
         device_subtitle: "Smart Plugs at your fingertips",
-
         direction_title: "Our Direction",
         direction_subtitle: "Want to visit us or know where we operate from?",
         direction_hq: "ElectroCorp Headquarters",
         direction_address: "Av. Prolongación Primavera 2390, Monterrico, Surco, Lima - Peru (UPC Headquarters)",
         direction_hours: "Hours: Monday to Friday from 9:00 AM to 6:00 PM",
-
         contact_title: "Join the Electrical Revolution",
         contact_subtitle: "The future is efficient. Subscribe to receive saving tips, app updates, and exclusive offers on our upcoming smart plug pack.",
         btn_send: "Submit",
         footer_rights: "All rights reserved."
+    },
+    pt: {
+        nav_home: "Início",
+        nav_desc: "Descrição",
+        nav_goals: "Objetivos",
+        nav_plans: "Planos",
+        nav_reviews: "Avaliações",
+        nav_about: "Sobre nós",
+        nav_smart: "Tomadas Smart",
+        nav_support: "Suporte",
+        nav_que_frequents: "FAQ",
+        nav_direction: "Endereço",
+        "meta.testimonialsSlider": "Carrossel de avaliações de clientes",
+        "meta.sliderPrev": "Avaliações anteriores",
+        "meta.sliderNext": "Próximas avaliações",
+        testimonials_sectionTitle: "O que dizem nossos clientes",
+        testimonials_rolePremium: "Cliente Premium",
+        testimonials_roleFree: "Usuário gratuito",
+        testimonials_q1: '"ElectroCorp.Web mostra qual eletrodoméstico realmente consome na nossa casa. Reduzi a conta sem refazer a fiação ou contratar técnicos extras; finalmente a energia inteligente parece real, não um luxo inatingível."',
+        testimonials_q2: '"Montamos o sistema nos nossos interruptores e tomadas em uma tarde: sem quebrar paredes e sem mexer no quadro. Essa abordagem plug-and-play foi o que nos convenceu; outros aplicativos genéricos nunca se adequavam ao nosso consumo real no Peru."',
+        testimonials_q3: '"Eu programo tomadas e vejo o consumo instantaneamente. Fui avisado quando um equipamento ficou ligado a noite toda; a conta de luz já era uma dor, e agora tenho um controle concreto."',
+        testimonials_q4: '"A plataforma web é compreensível; não é outro painel confuso. Vejo o consumo local como ele ocorre e planejo com dados, não às cegas com a conta."',
+        testimonials_q5: '"Controlamos tudo com ElectroCorp.Web: ligar/desligar remoto, horários e monitoramento no app. Para a nossa família, democratizar a automação residencial e reduzir custos de energia é o objetivo, e esta é a primeira solução que parece acessível."',
+        about_title: "Sobre nós",
+        about_lead: "Estudantes de Engenharia de Software da UPC construindo ElectroCorp.Web",
+        about_name_diego: "Diego Alexander Cabrejos Chocce",
+        about_role_diego: "Lógica e backend",
+        about_bio_diego: "Estudante de Engenharia de Software na UPC. C++, HTML, CSS, JavaScript, C#, Python e Java. Estrutura backend e APIs para ElectroCorp.Web.",
+        about_role_seb: "Dados e monitoramento",
+        about_bio_seb: "Estudante de Engenharia de Software na UPC. C++, HTML, CSS, JavaScript. Fluxo de dados, métricas e visualizações de consumo para a plataforma.",
+        about_role_gho: "Lógica e integração",
+        about_bio_gho: "Estudante de Engenharia de Software na UPC. C++, HTML, CSS e JavaScript. Conecta serviços e recursos de ponta a ponta.",
+        about_role_alex: "UI / UX e frontend",
+        about_bio_alex: "Estudante de Engenharia de Software na UPC. C++, HTML, CSS, JavaScript, C#, Python, Java e Flutter. Design e interface da plataforma ElectroCorp.Web e do app.",
+        about_role_ronal: "Lógica e qualidade",
+        about_bio_ronal: "Estudante de Engenharia de Software na UPC. C++, HTML, CSS e JavaScript. Qualidade de código, testes e entregas estáveis entre funcionalidades.",
+        nav_login: "Entrar",
+        nav_register: "Cadastrar",
+        hero_title: "Assuma o controle do consumo elétrico da sua casa",
+        hero_title2: "Economize até 20% de energia na sua casa",
+        hero_dashboard: "Ir para o painel",
+        hero_subtitle: "15% de desconto por 3 meses para os primeiros 50 novos usuários",
+        desc_title: "Descrição da Start-Up",
+        desc_text1: "Somos uma startup de tecnologia focada em democratizar a automação residencial e a eficiência energética para os lares peruanos.",
+        desc_text2: "Atualmente, transformar uma casa em 'inteligente' é caro, requer obras complexas (cabos, técnicos) e os aplicativos geralmente são genéricos ou difíceis de entender, além do alto custo da eletricidade.",
+        desc_text3: "Um ecossistema IoT plug-and-play que é instalado em minutos em interruptores e tomadas existentes. Permite controle remoto e monitoramento de consumo em tempo real, sem necessidade de reformas na casa.",
+        goals_title: "Nossos Objetivos",
+        goals_text: "Desenvolver um ecossistema de Internet das Coisas (IoT) com arquitetura plug-and-play de fácil entendimento que permita às famílias e novos negócios no Peru gerenciar seu consumo elétrico de forma eficiente, otimizando despesas financeiras e promovendo a sustentabilidade por meio de uma plataforma de software: um app e/ou site.",
+        faq_title: "Perguntas Frequentes sobre Consumo e Economia",
+        faq_subtitle: "Aprenda como gerenciar sua energia de forma inteligente",
+        faq_q1: "Quais eletrodomésticos consomem mais eletricidade?",
+        faq_a1: "Dispositivos que geram calor ou frio são os que mais consomem. Isso inclui aquecedores elétricos, geladeiras, ferros de passar e micro-ondas.",
+        faq_q2: "Como uma tomada inteligente ajuda a economizar energia?",
+        faq_a2: "Permite desligar dispositivos remotamente, evitar o consumo 'fantasma' (standby) e programar horários de uso automáticos.",
+        faq_q3: "O que é consumo em standby e como evitá-lo?",
+        faq_a3: "É a energia usada por aparelhos em modo de espera. Representa até 10% da conta. Evite-o desconectando os aparelhos ou usando Tomadas Inteligentes.",
+        plans_title: "Nossos Planos",
+        plans_subtitle: "Escolha o plano que melhor se adapta ao seu consumo e tamanho de infraestrutura.",
+        normal_plan_price: "S/ 18.90 <span> <s> S/25.90 </s> </span>",
+        normal_plan_desc: "Gestão básica de energia para lares pequenos.",
+        normal_plan_li1: "Até 5 dispositivos inteligentes",
+        normal_plan_li2: "Painel de energia básico",
+        normal_plan_li3: "Alertas por e-mail",
+        btn_start: "Comprar Serviço",
+        pro_plan_price: "S/ 48.90 <span> <s> S/52.90 </s> </span>",
+        pro_plan_desc: "Controle avançado para lares e pequenos negócios.",
+        pro_plan_li1: "Até 20 dispositivos inteligentes",
+        pro_plan_li2: "Análise avançada de energia",
+        pro_plan_li3: "Rotinas de automação",
+        pro_plan_li4: "Relatórios mensais",
+        btn_pro: "Comprar Serviço",
+        plan_ent_price: "S/ 128.90 <span> <s> S/135.90 </s> </span>",
+        plan_ent_desc: "Plataforma completa para várias filiais ou empresas.",
+        plan_ent_li1: "Várias filiais comerciais",
+        plan_ent_li2: "Perfis de acesso para a equipe",
+        plan_ent_li3: "Alertas avançadas",
+        plan_ent_li4: "Suporte prioritário",
+        btn_contact: "Comprar Serviço",
+        device_title: "Sistemas I.O.T. da ElectroCorp",
+        device_subtitle: "Tomadas Inteligentes ao seu alcance",
+        direction_title: "Nosso Endereço",
+        direction_subtitle: "Quer nos visitar ou saber de onde operamos?",
+        direction_hq: "Sede Central ElectroCorp",
+        direction_address: "Av. Prolongación Primavera 2390, Monterrico, Surco, Lima - Peru",
+        direction_hours: "Horário: Segunda a Sexta das 9:00 às 18:00",
+        contact_title: "Junte-se à Revolução Elétrica",
+        contact_subtitle: "O futuro é eficiente. Inscreva-se para receber dicas de economia, atualizações do app e ofertas exclusivas no nosso próximo pacote de tomadas inteligentes.",
+        btn_send: "Enviar",
+        footer_rights: "Todos os direitos reservados."
     }
 };
 
@@ -1981,7 +1880,7 @@ function applyTranslations(lang) {
     elements.forEach((element) => {
         const key = element.getAttribute("data-i18n");
         if (translations[lang] && translations[lang][key]) {
-            if (element.innerHTML.includes('<i class="fa')) {
+            if (element.querySelector('i.fa')) {
                 const icon = element.querySelector("i").outerHTML;
                 element.innerHTML = `${icon} ${translations[lang][key]}`;
             } else {
@@ -1999,21 +1898,38 @@ function applyTranslations(lang) {
 
     const searchInput = document.getElementById("searchInput");
     if (searchInput) {
-        searchInput.placeholder = lang === "en" ? "Search keyword or question" : "Buscar palabra clave o pregunta";
-    }
-
-    const langText = document.getElementById("lang-text");
-    if (langText) {
-        langText.innerText = lang === "en" ? "ES" : "EN";
+        if (lang === "es") {
+            searchInput.placeholder = "Buscar palabra clave o pregunta";
+        } else if (lang === "pt") {
+            searchInput.placeholder = "Buscar palavra-chave ou pergunta";
+        } else {
+            searchInput.placeholder = "Search keyword or question";
+        }
     }
 }
 
-function toggleLanguage() {
-    currentLanguage = currentLanguage === "en" ? "es" : "en";
+function setLanguage(lang) {
+    currentLanguage = lang;
     applyTranslations(currentLanguage);
+
+    // Quitamos la clase 'active' de todos los botones
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Le agregamos la clase 'active' solo al botón seleccionado
+    const activeBtn = document.getElementById(`btn-lang-${lang}`);
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+    }
 }
 
-===== js/newsletter.js =====
+// Cargar inglés (o el currentLanguage) por defecto al iniciar la página
+document.addEventListener("DOMContentLoaded", () => {
+    setLanguage(currentLanguage);
+});
+
+===== ./js/newsletter.js =====
 /* Formulario de suscripción (lead) */
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("form-suscripcion");
@@ -2040,7 +1956,137 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-===== js/search.js =====
+
+===== ./js/plan-checkout.js =====
+const WEBAPP_REGISTER_URL = "https://electrocorp-webapp.onrender.com/iam/register";
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("checkout-modal");
+    const form = document.getElementById("landing-checkout-form");
+    const planNameText = document.getElementById("checkout-plan-name");
+    const planPriceText = document.getElementById("checkout-plan-price");
+
+    const holderInput = document.getElementById("checkout-holder");
+    const cardInput = document.getElementById("checkout-card");
+    const expirationInput = document.getElementById("checkout-expiration");
+    const cvvInput = document.getElementById("checkout-cvv");
+
+    if (
+        !modal ||
+        !form ||
+        !planNameText ||
+        !planPriceText ||
+        !holderInput ||
+        !cardInput ||
+        !expirationInput ||
+        !cvvInput
+    ) {
+        return;
+    }
+
+    let selectedPlan = {
+        code: "PROFESSIONAL",
+        name: "Professional Plan",
+        price: "49.00",
+    };
+
+    document.querySelectorAll(".plan-select-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+            selectedPlan = {
+                code: button.dataset.planCode || "PROFESSIONAL",
+                name: button.dataset.planName || "Professional Plan",
+                price: button.dataset.planPrice || "49.00",
+            };
+
+            planNameText.textContent = selectedPlan.name;
+            planPriceText.textContent = selectedPlan.price;
+
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+
+            setTimeout(() => holderInput.focus(), 100);
+        });
+    });
+
+    document.querySelectorAll("[data-close-checkout]").forEach((element) => {
+        element.addEventListener("click", closeCheckout);
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && modal.classList.contains("open")) {
+            closeCheckout();
+        }
+    });
+
+    cardInput.addEventListener("input", () => {
+        const cleanValue = cardInput.value.replace(/\D/g, "").slice(0, 16);
+        cardInput.value = cleanValue.replace(/(.{4})/g, "$1 ").trim();
+    });
+
+    expirationInput.addEventListener("input", () => {
+        const cleanValue = expirationInput.value.replace(/\D/g, "").slice(0, 4);
+
+        if (cleanValue.length >= 3) {
+            expirationInput.value = `${cleanValue.slice(0, 2)}/${cleanValue.slice(2)}`;
+            return;
+        }
+
+        expirationInput.value = cleanValue;
+    });
+
+    cvvInput.addEventListener("input", () => {
+        cvvInput.value = cvvInput.value.replace(/\D/g, "").slice(0, 4);
+    });
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const holderName = holderInput.value.trim();
+        const cardDigits = cardInput.value.replace(/\D/g, "");
+        const expiration = expirationInput.value.trim();
+        const cvv = cvvInput.value.trim();
+        const lastFourDigits = cardDigits.slice(-4);
+
+        if (holderName.length < 3) {
+            alert("Ingresa el nombre del titular de la tarjeta.");
+            return;
+        }
+
+        if (cardDigits.length < 12) {
+            alert("Ingresa un número de tarjeta válido para la simulación.");
+            return;
+        }
+
+        if (!/^\d{2}\/\d{2}$/.test(expiration)) {
+            alert("Ingresa una fecha de vencimiento válida. Ejemplo: 12/29.");
+            return;
+        }
+
+        if (cvv.length < 3) {
+            alert("Ingresa un CVV válido para la simulación.");
+            return;
+        }
+
+        const queryParams = new URLSearchParams({
+            planCode: selectedPlan.code,
+            planName: selectedPlan.name,
+            planPrice: selectedPlan.price,
+            source: "landing",
+            paymentCollected: "true",
+            holderName,
+            cardLastFourDigits: lastFourDigits,
+        });
+
+        window.location.href = `${WEBAPP_REGISTER_URL}?${queryParams.toString()}`;
+    });
+
+    function closeCheckout() {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+    }
+});
+
+===== ./js/search.js =====
 /* Buscador: palabra clave → desplazamiento a sección */
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("searchInput");
@@ -2105,7 +2151,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-===== js/testimonials.js =====
+
+===== ./js/testimonials.js =====
 /* Carrusel horizontal: flechas y teclado */
 document.addEventListener("DOMContentLoaded", () => {
     const rail = document.getElementById("testimonialSlider");
@@ -2139,5 +2186,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-===== README.md =====
-# ElectroCorp-website
+
