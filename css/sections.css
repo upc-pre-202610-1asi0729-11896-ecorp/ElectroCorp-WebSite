@@ -476,3 +476,188 @@ footer p a {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ============================= */
+/* PRICING PLANS POLISH */
+/* ============================= */
+
+.service-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-section .section-heading {
+    margin-bottom: 52px;
+}
+
+.service-section .section-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    padding: 7px 16px;
+    margin-bottom: 14px;
+
+    border-radius: 999px;
+    border: 1px solid rgba(66, 194, 255, 0.32);
+
+    color: var(--main-blue);
+    background: rgba(66, 194, 255, 0.08);
+
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+
+    box-shadow: 0 0 18px rgba(66, 194, 255, 0.08);
+}
+
+.service-grid {
+    align-items: stretch;
+    gap: 42px;
+}
+
+.service-card {
+    position: relative;
+    overflow: visible;
+
+    width: 340px;
+    min-height: 520px;
+    padding: 48px 42px 38px;
+
+    border-radius: 22px;
+    border: 1px solid rgba(160, 190, 230, 0.18);
+
+    background:
+        radial-gradient(circle at top, rgba(66, 194, 255, 0.12), transparent 38%),
+        linear-gradient(180deg, rgba(20, 35, 58, 0.96), rgba(17, 31, 53, 0.96));
+
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(66, 194, 255, 0.42);
+    box-shadow:
+        0 28px 80px rgba(0, 0, 0, 0.34),
+        0 0 36px rgba(66, 194, 255, 0.14);
+}
+
+.service-card.professional {
+    border-color: rgba(66, 194, 255, 0.58);
+    transform: translateY(-18px);
+    box-shadow:
+        0 32px 90px rgba(0, 0, 0, 0.36),
+        0 0 42px rgba(66, 194, 255, 0.16);
+}
+
+.service-card.professional:hover {
+    transform: translateY(-26px);
+}
+
+.recommended-badge {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 150px;
+    padding: 9px 18px;
+
+    border-radius: 999px;
+    border: 1px solid rgba(66, 194, 255, 0.55);
+
+    color: #04111f;
+    background: linear-gradient(135deg, #42c2ff, #7be0ff);
+
+    font-size: 0.82rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    box-shadow:
+        0 12px 28px rgba(66, 194, 255, 0.22),
+        0 0 28px rgba(66, 194, 255, 0.18);
+
+    z-index: 3;
+}
+
+.plan-top {
+    display: grid;
+    gap: 8px;
+    min-height: 126px;
+}
+
+.plan-code {
+    display: block;
+
+    color: var(--main-blue);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.service-card h4 {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 1.18rem;
+}
+
+.service-card .plan-top p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.service-card h2 {
+    margin: 22px 0 24px;
+    color: #ffffff;
+    font-size: 2.35rem;
+    line-height: 1;
+}
+
+.service-card h2 span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.service-card ul {
+    margin: 0 0 32px;
+    display: grid;
+    gap: 16px;
+}
+
+.service-card ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0;
+
+    color: var(--text-light);
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.service-card ul li i {
+    margin: 4px 0 0;
+    color: var(--main-blue);
+}
+
+.service-card .plan-select-btn {
+    margin-top: auto;
+    min-height: 46px;
+
+    border-radius: 999px;
+    font-weight: 900;
+
+    box-shadow: 0 16px 30px rgba(66, 194, 255, 0.18);
+}
